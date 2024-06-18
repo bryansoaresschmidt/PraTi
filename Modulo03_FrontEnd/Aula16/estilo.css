@@ -1,0 +1,23 @@
+h1 {
+    color: RGB(13, 128, 191);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.listaNaoOrdenada {
+    list-style-type: disc;
+}
+
+nav#menu {
+    border: 3px solid blue;
+    display: block;
+    height: 1em;
+}
+
+nav#menu {
+    border: 1px solid red;
+    display: inline-block
+}
+
+table#tabela td.ColunaDireita {
+    background-color: ivory
+}

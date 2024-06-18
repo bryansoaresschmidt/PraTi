@@ -1,0 +1,44 @@
+
+* {
+    margin: 0 auto;
+}
+html, body {
+    height: 100%;
+}
+
+nav {
+    background-color: rgb(0, 125, 227);
+    width: 5%;
+    position: fixed;
+    height: 100%;
+    padding: 15px;
+}
+
+ul {
+    list-style: none;
+    padding: 3px;
+    align-items: center;
+}
+
+li {
+    padding-top: 15px;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+}
+
+span {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.spanWhite {
+    color: white;
+    padding: 3px;
+}
+
+.spanOrange {
+    color: orangered;
+    padding: 3px;
+}

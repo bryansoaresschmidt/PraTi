@@ -1,0 +1,31 @@
+* {
+    color: black; /* Mais específico */
+}
+
+#div01 {
+    color: red; /* Segundo mais */
+}
+
+.classeDiv01 {
+    color: blue; /* Terceiro */
+}
+
+div {
+    color:green; /* Quarto */
+}
+
+
+
+
+
+
+
+/*
+#div01 p {
+    color: red; !important / Faz com que esse seja utilizado e não o outro /
+}
+
+#div01 p {
+    color: blue; / Por padrão pega por último /
+}
+*/

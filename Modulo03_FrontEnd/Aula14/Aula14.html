@@ -1,0 +1,168 @@
+<!-- LINE SERVER-->
+Extensão para abrir o html dentro do próprio VS Code
+
+<!-- ! + ENTER -> dá uma estrutura pronta do HTML -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <html lang="pt-br" />
+    <meta charset="utf-8" />
+    <title>Aula 14</title>
+  </head>
+
+  <body>
+
+<!-- Diferentes tipos de tamanhos de fontes -->
+    <h1>Bryan</h1>
+    <h2>Bryan</h2>
+    <h3>Bryan</h3>
+    <h4>Bryan</h4>
+    <h5>Bryan</h5>
+    <h6>Bryan</h6>
+    Bryan
+
+
+<!-- Adiciona uma "horizontal row" -->
+    <hr>
+
+<!-- Adiciona um parágrafo (lore + enter = texto Lore Ipsum) -->
+    <p>Insira o salário do usuário: 7000 O usuário é homem ou mulher?</p>
+
+<!-- Adiciona uma quebra de linha -->
+    <br>
+
+<!-- a: âncora, href: hyperlink reference -->
+    <a href="https://www.instagram.com/_bryanschmidt_/">Link para meu instagram</a>
+
+<!-- Adicionar imagens -->
+    <img width="100" height="100" src="./homemDeFerro.jpg" 
+    alt="Homem de ferro mirando"/> <!--caso não carregue aparece isso-->
+
+<!-- Listas: unordered list-->
+    <ul type="square">
+      <!-- types: circle, disc, square -->
+      <li>Sala de Seguidores</li>
+      <li>Curtidas totais</li>
+      <li>Amigos locais</li>
+    </ul>
+
+<!-- Listas: ordered list-->
+    <ol type="">
+      <!-- types: " ", A, a -->
+      <li>Rodrigo</li>
+      <li>Caio</li>
+      <li>Rodolfina</li>
+    </ol>
+
+<!-- Funções nas Tabelas -->
+    <!-- tr (table row): define uma linha na tabela -->
+    <!-- th (table header): define um cabeçalho na tabela -->
+    <!-- td (table data): define os dados, a informação armazenada -->
+    <!-- caption: define uma legenda para tabela -->
+    <!-- colgroup: especifica um grupo de uma ou mais colunas na tabela para formatação --> ???
+
+    <table border="2" width="30%">
+      <caption>
+        Tabela dos Melhores Times
+      </caption>
+      <tr>
+        <th>Time</th>
+        <th>Pontos</th>
+        <th>Gols</th>
+      </tr>
+
+      <tr>
+        <td>Grêmio</td>
+        <td>70</td>
+        <td>120</td>
+      </tr>
+
+      <tr>
+        <td>Flamengo</td>
+        <td>65</td>
+        <td>80</td>
+      </tr>
+    </table>
+
+<!-- colspan: gerencia as colunas -->
+<!-- rowspan: gerencia as linhas -->
+
+    <table border="2" width="30%">
+      <tr>
+        <th>Time</th>
+        <th>Pontos</th>
+        <th>Gols</th>
+      </tr>
+
+      <tr>
+        <td rowspan="2">Santos</td>
+        <td>44</td>
+        <td>50</td>
+      </tr>
+
+      <tr>
+        <td colspan="2">Palmeiras</td>
+        <td>69</td>
+        <td>115</td>
+      </tr>
+    </table>
+
+<!-- Tipos de dados para inserir nos Formulários -->
+    <!--
+    text: botão de envio para entrada de texto de uma linha;
+    password: criar campos de senha (os caracteres são mascarados);
+    number: permite que o usuário insira um valor numérico;
+    email: valida como endereço de e-mail;
+    tel: valida o campo como um número de telefone;
+
+    checkbox: caixa de seleção que permite que o usuário marque uma ou mais opções;
+    radio: botão de opção que permite que o usuário escolha uma opção de um conjunto;
+
+    date: usuário selecione uma data.
+
+    url: usuário cola uma URL;
+    file: permite que o usuário faça upload de arquivos;
+
+    reset: cria um botão para redefinir os valores do formulário;
+    submit: cria um botão de envio
+  -->
+    <h2>Cadastre-se</h2>
+    <form>
+      Email: <input type="text" name="email" /><br>
+      Senha: <input type="password" name="senha" /><br>
+
+      Comida Favorita: <input type="text" name="comida" value="Comida favorita" /><br>
+      Comida Favorita: <input type="text" name="comida" placeholder="Comida favorita" /><br>
+
+      Sexo: 
+      <input type="radio" name="sexo" value=""/>Masculino
+      <input type="radio" name="sexo" value=""/>Feminino    <br>
+      Interesses:
+      <input type="checkbox" name="interesses" /> Front-End
+      <input type="checkbox" name="interesses" /> Back-End  <br>
+
+      Estado:
+      <select name="Estado">
+        <option value="rs">RS</option>
+        <option value="rj">RJ</option>
+        <option value="sc">SC</option>
+      </select><br>
+
+      Observações: <br>
+      <textarea></textarea> <br>
+
+      <input type="submit" value="Cadastrar" /><br /><br />
+    </form>
+
+    <hr />
+
+<!--Caracteres Especiais-->
+    &copy - copyrigth   <br>
+    &amp - &            <br>
+    &euro - euro        <br>
+    &alt - alt          <br>
+    &gt - maior (>)     <br>
+    &reg - R
+
+  </body>
+</html>

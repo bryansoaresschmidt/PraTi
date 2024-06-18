@@ -1,0 +1,117 @@
+<!-- História da Internet -->
+
+<!-- 1. www (World Wide Web)-->
+WWW é um sistema interligado de INFORMAÇÕES e ARQUIVOS executados na internet que
+conversam com o protocol HTTP, geralmente é grande parte da internet, dos nossos
+browsers
+<br><br>
+<!-- 2. http (Hypertext Transfer Protocol) -->
+HTTP é um protocolo de comunicação que permite o acesso a internet e a visualização
+do conteúdo na internet.
+<br><br>
+<!-- 3. hyml (Hyper Text Marckup Language) --> 
+HTML é uma linguagem de marcação baseada em texto. 
+<br><br>
+<!-- 4. Modem -->
+Modulação e Demodulação (de ondas)
+Provedor de internet sabe todos os sites que acessamos porque fica registrado no modem.
+<br><br>
+<!-- 5. Servidores -->
+Não existe nuvem, existem servidores!! 
+Quando subimos um site, estamos subindo um ARQUIVO ao SERVIDOR e depois SOLICITAMOS esse arquivos...
+Mas como saber em qual servidor solicitar?
+<br><br>
+<!-- 6. dns (Domain Name Service) -->
+DNS traduz um nome de domínio (www.sulcalhasul.com) e converte para um endereço IP (192.168.1.1) para
+que os navegadores possam encontrar o site. 
+Cada máquina tem um IP. Cada servidor tem um IP (existem ip local e ip público).
+<br><br>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Página Principal</title>
+    <html lang="pt-br" />
+
+<!-- meta: tag que fornece informações adicionais não visíveis (SEO) -->
+    <meta charset="utf-8"/> <!-- informa os tipos de caracteres -->
+    <meta name="description" content="Descrição que aparece nos mecanismos de busca"/>
+    <meta name="author" content="Bryan Schmidt"/>
+    <meta name="keywords" content="Antigamente utilizada para palavras chave, mas não é mais relevante"/>
+    <meta name="robots" content="É um fragmento de código HTML que instrui os robôs 
+    dos motores de busca sobre como rastrear e indexar uma página específica. Ela permite controlar o 
+    comportamento dos motores de busca em relação à página."/>
+    <link rel="canonical" href="https://www.exemplo.com/pagina"/>
+
+<!-- meta property: usada para compartilhamento em redes sociais -->
+    <meta property="og:title" content="Título da Página">
+    <meta property="og:description" content="Descrição da Página">
+    <meta property="og:image" content="P:\Arquivos\Programação\+PraTi\Modulo03_FrontEnd\Aula15\praia.jpeg">
+  </head>
+
+<!-- Algumas funções -->
+  <body>
+    <h1 style="color: red; font-size: 60px; text-align: center">Bryan</h1>
+    <h2 style="margin: 0 100px 0 100px; font-size: 1Sem">Bryan</h2>
+    <h6 onclick="alert('Nos enviar email é inútil, ninguém vai ver');">Enviar Email</h6>
+  </body>
+
+  <body>
+    <p>
+      A <abbr title="Universidade Federal do Rio Grando deo Sul">UFRG</abbr> Foi fundada a x anos
+    </p>
+
+<!-- Fazer ênfase no texto-->
+    <em>itálico</em>
+    <br>
+<!-- Deixar o texto em itálico -->
+    <cite>itálico</cite>
+    <br><br>
+<!-- Inserir aspas no texto -->
+    <q> aspas </q>
+    <br><br>
+<!-- Negrito tradicional -->
+    <b> negrito </b>
+    <br>
+<!-- Navegador entende que é uma ênfase ainda maior que o negrito tradicional -->
+    <strong> negrito </strong>
+    <br><br>
+
+    <blockquote cite="https://en.wikipedia.org/wiki/Pirin">Informações sobre Pirim</blockquote>
+
+<!-- Mais tipos de formulários-->
+    <form id="Cadastro" method="POST" action="mailto:professoredu@codifica.com">
+      <fieldset id="cadastro">
+        <legend>Identificação do Usuário</legend>
+        <p>Nome:<input type="text" name="nome" id="idNome" size="20" maslength="12"/></p>
+        login:<input type="text" name="login" /><br />
+        sexo:<input type="radio" name="sexo" value="M" /><label for="sMasculino"></label>Masculino<br />
+      </fieldset>
+    </form>
+    <datalist id="cidades">
+      <option value="Rio de Janeiro">RJ</option>
+      <option value="Vitória ">ES</option>
+      <option value="São Paulo">SP</option>
+    </datalist>
+
+<!-- Optgroup: podemos adicionar grupos de opções -->
+<select name="Estado">
+  <optgroup label="Região Sudeste">
+    <option value="sp">SP</option>
+    <option value="rs">RS</option>
+    <option value="rj">RJ</option>
+  </optgroup>
+</select>
+<br>
+<!-- Google Maps: podemos adicionar Google Maps ao site -->
+    <iframe
+      src="https://www.google.com.br/maps/@-29.940668,-51.0003698,14z?entry=ttu"
+      frameborder="5"
+      style="border: 5"
+      width="100"
+      height="100"
+      allowfullscreen=""
+    >Google Maps
+    </iframe>
+  </body>
+</html>

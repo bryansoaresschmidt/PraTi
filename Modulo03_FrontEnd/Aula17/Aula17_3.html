@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula17.3</title>
+    <style type="text/css">   
+        .inline {
+            border: 3px solid red;
+            display: inline; (não precisaria definir porque ele já é inline)
+        }
+
+        .inlineblock {
+            border: 3px solid red;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+<!-- Diferença entre inline e inlineblock -->
+    <span class="inline"> 
+        inline-block Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur qui possimus quos nesciunt eaque doloremque quidem in voluptatem dolore alias, a, commodi facilis cupiditate illum unde est esse aliquid quam?
+    </span><br><br>
+    <span class="inlineblock">
+        inline Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, aliquam, animi rerum laborum nulla provident accusantium harum fugit quisquam voluptate omnis error consectetur impedit eum ducimus, ea voluptates voluptatem dolorem?
+    </span><br><br>
+    
+    <h1 class="borda">Algumas propriedades vem setadas por padrão como inline/block</h1>
+    
+<!-- Algumas () vem setadas por padrão como inline/block-->
+    <!-- inline --> span, image, link (não pode setar altura e largura)
+    <br>
+    <!-- inlineblock -->h, p, table (pode setar altura e largura)
+    <br><br><br>
+    Exemplo:
+    <p>block</p><p>block</p><p>block</p>
+    <span>block</span><span>block</span><span>block</span>
+</body>
+</html>
+
+

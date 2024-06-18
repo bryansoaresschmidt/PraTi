@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maneiras de inputar as CSS</title>
+  </head>
+
+  <style>
+    @import url("./estilo.css"); /* 1ª maneira de importar */
+    <link rel="stylesheet" href="estilo.css">/* 2ª maneira de importar */
+  </style>
+
+  <style type="text/css">
+    #principal /*# faz reverencia pra id*/ {
+      background-color: rgb;
+    }
+    .cor-paragrafo /*. faz reverencia a class*/ {
+      color: green;
+      font-size: 50px;
+    }
+    #destaque,
+    #topo,
+    #rodape {
+      color: black;
+      width: 10px;
+      margin: 10px;
+    }
+
+    a:link {
+      text-decoration: none;
+      color: purple;
+    }
+
+    a:hover {
+      /*quando passa o mouse por cima*/
+      color: brown;
+      margin: 25px;
+      cursor: crosshair;
+    }
+
+    a:visited {
+      /*links que já foram acessados*/
+      color: blue;
+    }
+
+    /*
+O visited só aceita esses: 
+
+Propriedades admicíveis no CSS são:
+color;
+background-color;
+border-color;
+border-bottom-color;
+border-left-color;
+border-right-color;
+border-top-color;
+column-rule-color;
+outline-color.
+*/
+
+    a:active {
+      /*quando estão clicados*/
+      color: indigo;
+    }
+  </style>
+
+  <body>
+    <div id="topo">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="gameover.com">Produtos</a></li>
+        <li>Contato</li>
+      </ul>
+
+      <img src="images/FunilariaSulcalhasulLogo.png" alt="" />
+    </div>
+    <div id="rodape">Todos os direitos reservados &copy</div>
+  </body>
+
+  <body id="principal">
+    <h1>Maneiras de importar CSS</h1>
+
+    <p class="cor-paragrafo">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+    </p>
+    <p class="cor-paragrafo">
+      Sit unde quas odit amet
+      <span id="destaque"> rerum, delectus nulla,</span> possimus odio molestias
+      ipsa similique dolorum est mollitia dolores. Dignissimos atque molestiae
+      saepe modi?
+    </p>
+
+    <!--DL, DT, DD-->
+    <!--
+    dl: description list
+    dt: description term
+    dd: description detail
+-->
+    <dl>
+      <dt>Switch</dt>
+      <dd>Dispositivos utilizados em redes de computadores</dd>
+
+      <dt>Hub</dt>
+      <dd>Dispositivos utilizados em redes de computadores</dd>
+    </dl>
+
+    <!--
+    Id: é um identificado uniátio dentro de um site
+    Class: permite manipular diversos componentes do site sob um site
+    Div: 
+-->
+  </body>
+</html>
