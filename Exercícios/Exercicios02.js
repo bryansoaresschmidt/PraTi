@@ -1044,52 +1044,112 @@ do seu cartão e um vetor de Respostas de 13 posições. Verifique para cada apo
 número de acertos, comparando o vetor de Gabarito com o vetor de Respostas. Escreva
 o número do apostador e o número de acertos. Se o apostador tiver 13 acertos, mostrar a
 mensagem "Parabéns, tu foi o GANHADOR".*/
+if (false) {
+  // Gerar os números da ProgramaCena:
+  const vetorWinner =
+    new Set(); /* new Set() = aceita apenas números diferentes */
 
-// Gerar os números da ProgramaCena:
-const vetorWinner = new Set(); /* new Set() = aceita apenas números diferentes */
-
-while (vetorWinner.size < 13) { /* .size = similar ao .length mas para o método new Set() */
-  vetorWinner.add(
-    Math.floor(Math.random() * 60) + 1); /* .add = similar ao .push */
-}
-
-console.log(
-  `Os números da ProgramaCena foram: ${Array.from(vetorWinner) 
-    .sort((a, b) => a - b) // Coloca os elementos em ordem
-    .join(", ")}` // Separa os elementos por ", "
-);
-
-// Gerar os números dos apostadores:
-
-for (let i = 1; i <= 100; i++) {
-  let vetorChoosen = new Set();
-
-  while (vetorChoosen.size < 13) {
-    vetorChoosen.add(Math.floor(Math.random() * 60) + 1);
+  while (vetorWinner.size < 13) {
+    /* .size = similar ao .length mas para o método new Set() */
+    vetorWinner.add(
+      Math.floor(Math.random() * 60) + 1
+    ); /* .add = similar ao .push */
   }
 
   console.log(
-    `Os números escolhidos foram: ${Array.from(vetorChoosen)
-      .sort((a, b) => a - b)
-      .join(", ")}`
+    `Os números da ProgramaCena foram: ${Array.from(vetorWinner)
+      .sort((a, b) => a - b) // Coloca os elementos em ordem
+      .join(", ")}` // Separa os elementos por ", "
   );
 
-// Números de respostas corretas:
-  let answersRigth = 0;
-  for (num of vetorWinner) { // for of para pegar os elementos da vetor vetorWinner
-    if (vetorChoosen.has(num)) { // conferir se o vetorChoosen tem o mesmo número do vetorWinner
-      answersRigth++; // se sim, respotas corretas +1
+  // Gerar os números dos apostadores:
+
+  for (let i = 1; i <= 100; i++) {
+    let vetorChoosen = new Set();
+
+    while (vetorChoosen.size < 13) {
+      vetorChoosen.add(Math.floor(Math.random() * 60) + 1);
+    }
+
+    console.log(
+      `Os números escolhidos foram: ${Array.from(vetorChoosen)
+        .sort((a, b) => a - b)
+        .join(", ")}`
+    );
+
+    // Números de respostas corretas:
+    let answersRigth = 0;
+    for (num of vetorWinner) {
+      // for of para pegar os elementos da vetor vetorWinner
+      if (vetorChoosen.has(num)) {
+        // conferir se o vetorChoosen tem o mesmo número do vetorWinner
+        answersRigth++; // se sim, respotas corretas +1
+      }
+    }
+    if (answersRigth === 13) {
+      console.log(`|                            |`);
+      console.log(`|                            |`);
+      console.log(`|PARABÉNS, tu foi o GANHADOR.|`);
+      console.log(`|                            |`);
+      console.log(`|                            |`);
+    } else if (answersRigth > 0) {
+      console.log(`O apostador ${i} acertou ${answersRigth} número(s).`);
+    } else {
+      console.log(`O apostador ${i} acertou NENHUM número.`);
     }
   }
-  if (answersRigth === 13) {
-    console.log(`|                            |`);
-    console.log(`|                            |`);
-    console.log(`|PARABÉNS, tu foi o GANHADOR.|`);
-    console.log(`|                            |`);
-    console.log(`|                            |`);
-  } else if (answersRigth > 0) {
-    console.log(`O apostador ${i} acertou ${answersRigth} número(s).`);
-  } else {
-    console.log(`O apostador ${i} acertou NENHUM número.`);
+}
+
+/*Exercício 37. Escreva um algoritmo que leia um vetor G de 20 elementos caractere que representa
+    o gabarito de uma prova. A seguir, para cada um dos 50 alunos da turma, leia o vetor de
+    respostas (R) do aluno e conte o número de acertos. Mostre o número de acertos do
+    aluno e uma mensagem “APROVADO” se a quantidade de acertos for maior ou igual a 12;
+e mostre uma mensagem de “REPROVADO”, caso contrário.*/
+if (false) {
+
+  let vetorG = [];
+  let quantQuestions = parseInt(prompt("Insira a quantidade de questões da prova: "));
+  let acertos = parseInt(prompt("Insira a quantidade mínima de acertos: "));
+  
+  while (vetorG.length < quantQuestions) {
+    let promptAnswers = prompt("Insira o gabarito da prova: ").toUpperCase();
+    if (
+      promptAnswers === "A" ||
+      promptAnswers === "B" ||
+      promptAnswers === "C" ||
+      promptAnswers === "D" ||
+      promptAnswers === "E"
+    ) {
+      vetorG.push(promptAnswers);
+    } else {
+      console.log("Opção inválida, insira novamente.");
+    }
   }
+  console.log(`Gabarito: ${vetorG}`);
+  
+  let promptQuant = parseInt(prompt("Insira a quantidade de crianças: "));
+  
+  for (let i = 0; i < promptQuant; i++) {
+    let answersCorrect = 0;
+    let vetorAluno = [];
+    let student = prompt("Insira o nome do aluno: ");
+    while (vetorAluno.length < quantQuestions) {
+      let promptStudentAnswers = prompt("Insira as respostas do aluno: ").toUpperCase();
+      if (promptStudentAnswers === "A" || promptStudentAnswers === "B" || promptStudentAnswers === "C" || promptStudentAnswers === "D" || promptStudentAnswers === "E") {
+        vetorAluno.push(promptStudentAnswers);
+        if (vetorAluno[vetorAluno.length - 1] === vetorG[vetorAluno.length - 1]) {
+          answersCorrect++;
+        }
+      } else {
+        console.log("Resposta inválida, insira as respostas do aluno: ");
+      }
+    }
+    
+    if (answersCorrect >= acertos) {
+      console.log(`${student} acertou ${answersCorrect} questões e foi: APROVADO`);
+    } else {
+      console.log(`${student} acertou ${answersCorrect} questões e foi: REPROVADO`);
+    }
+  }
+  
 }
