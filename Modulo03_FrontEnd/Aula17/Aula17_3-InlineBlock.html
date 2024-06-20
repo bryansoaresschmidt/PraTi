@@ -7,7 +7,7 @@
     <style type="text/css">   
         .inline {
             border: 3px solid red;
-            display: inline; (não precisaria definir porque ele já é inline)
+            display: inline; /* não precisaria definir porque ele já é inline */
         }
 
         .inlineblock {
@@ -28,13 +28,23 @@
     <h1 class="borda">Algumas propriedades vem setadas por padrão como inline/block</h1>
     
 <!-- Algumas () vem setadas por padrão como inline/block-->
-    <!-- inline --> span, image, link (não pode setar altura e largura)
+    <!-- inline --> Inline: span, image, link (não pode setar altura e largura)
     <br>
-    <!-- inlineblock -->h, p, table (pode setar altura e largura)
-    <br><br><br>
+    <!-- block --> Block: h, p, table (pode setar altura e largura)
+    <br><br>
     Exemplo:
-    <p>block</p><p>block</p><p>block</p>
+
+    <br><br>
     <span>block</span><span>block</span><span>block</span>
+    <p>block</p><p>block</p><p>block</p>
+
+    <!-- Digite span.text --> <span class="text">Eu sou um texto</span>
+    <!-- Digite span.text>p>a*3 --> <span class="text">
+        <p>
+            <a href="">Home</a>
+            <a href="">Sobre</a>
+            <a href="">Peça um orçamento!</a></p>
+    </span> 
 </body>
 </html>
 
