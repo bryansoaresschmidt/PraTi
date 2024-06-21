@@ -1327,10 +1327,24 @@ console.log(pessoa)
 /*Exercício 42. Crie um objeto chamado dados que contém várias propriedades, incluindo números,
 strings e arrays. Escreva uma função que retorne um novo objeto apenas com as
 propriedades que são arrays.*/
-
-let dados = {
-  numeros: 10,
-  strings: "ovo",
-  arrays: [1,2,3,4]
+if (false) {
+  let dados = {
+    numeros: 10,
+    strings: "ovo",
+    arrays: [1,2,3,4],
+    hobbies: ["surfar","nadar","pescar"]
+  }
+  
+  function retornarNovoObjeto(obj) {
+    let newObject = {};
+    for (let index in obj) {
+      if (Array.isArray(obj[index])) {
+        newObject[index] = obj[index];
+      }
+    }
+    return newObject;
+  }
+  
+  console.log(retornarNovoObjeto(dados))
+  
 }
-
