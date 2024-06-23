@@ -1,0 +1,16 @@
+/* Herança */
+* {
+    border: solid black; /* Mais específico */
+}
+
+#div01 {
+    border: solid red; /* Segundo mais */
+}
+
+div {
+    border: solid green; /* Terceiro */
+}
+
+.classeDiv01 {
+    border: solid blue; /* Quarto */
+}

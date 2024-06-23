@@ -1,0 +1,20 @@
+* { 
+    border: 3px solid rgb(141, 36, 36)
+} /* Seleciona tudo dentro do documento */
+
+/* Elementos Filhos e Pais: */
+div p {
+    border: solid green; /* 1.Pega todos descendentes que estão dentro de pais*/
+}
+
+div > p {
+    border: solid blue; /* 2.Pega elementos que estão em link direto, ou seja, somente os filhos que estão embaixo dos pais */
+} /* Não precisa ser o primeiro filho, mas sim, um filho */
+
+h2+p {
+    border: solid red; /* Vai selecionar o próximo elemento, um elemento irmão */
+} /* 1.Desde que este elemento esteja ao lado dele */
+
+h2~p {
+    border: solid red; /* Vai selecionar o próximo elemento, um elemento irmão */
+} /* 2.Estando ao lado ou não dele */

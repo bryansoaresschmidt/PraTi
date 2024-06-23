@@ -1,0 +1,15 @@
+/* Especificidade: */
+
+/* Important e dois elementos iguais */
+#div01 p {
+    color: red; !important; /* Faz com que esse seja utilizado e não o outro */
+}
+
+#div01 p {
+    color: blue; /* Por padrão pega por último */
+}
+
+/* Obs.: Se o documento estiver estilizado no próprio documento, o que vai valer
+é o do próprio documento, a não ser que tenha um important */
+
+
