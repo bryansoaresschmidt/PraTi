@@ -1,0 +1,36 @@
+* {
+    list-style: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+nav {
+    height: 100px;
+    background-color: black;
+}
+
+#logoNav {
+    width: 80px;
+    margin-left: 100px;
+    margin-top: 10px;
+}
+
+li {
+    display: inline-block;
+    border-top: 3px solid white;
+    padding: 20px;
+    padding-top: 10px;
+    color: white;
+    position: relative;
+    bottom: 25px;
+    left: 50px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
