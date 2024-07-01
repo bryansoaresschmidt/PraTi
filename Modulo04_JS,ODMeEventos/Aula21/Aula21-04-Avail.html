@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>BOM (Browser Object Model) - Avail</title>
+
+    <script>
+
+        let width = window.screen.availHeight;
+        let height = window.screen.availWidth;
+
+        document.write("Altura da tela: " + height + "</br>")
+        document.write("Largura da tela: " + width + "</br>")
+
+        window.setTimeout(() => {
+            document.write("Grêmio </br>")
+        }, 10000)
+
+    </script>
+</head>
+<body>
+    <button onclick="window.location.href = 'https://www.google.com' ">Acessar</button>
+    
+</body>
+</html>

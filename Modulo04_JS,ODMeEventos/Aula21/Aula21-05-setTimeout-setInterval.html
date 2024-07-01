@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>BOM (Browser Object Model) - Avail</title>
+
+    <script>
+        window.setTimeout(() => {
+            document.write("GO! </br>")
+        }, 4000)
+
+        let i = 3;
+
+        let x = window.setInterval(() => {
+            document.write(i + '</br>'); i--; if (i === 0) {clearInterval(x)}
+        }, 1000)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

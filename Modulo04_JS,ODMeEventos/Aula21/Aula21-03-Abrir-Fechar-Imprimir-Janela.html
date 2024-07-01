@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>BOM (Browser Object Model) Abrir/Fechar/Imprimir Janela</title>
+
+    <script>
+
+        let janela;
+
+        function popUp() {
+            janela = window.open('', 'janela', 'width=200')
+        }
+
+        function closePopUp() {
+            janela.close()
+        }
+    </script>
+</head>
+<body>
+    <button type="button" onclick="popUp()">Abrir Janela</button>
+    <button type="button" onclick="closePopUp()">Fechar Janela</button>
+    <button type="button" onclick="window.print()">Imprimir Janela</button>
+    
+</body>
+</html>

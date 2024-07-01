@@ -1,0 +1,98 @@
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+form {
+    background-image: linear-gradient(to top left,red, blue);
+    height: 100%;
+    }
+    
+    table {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+
+}
+
+.titulo {
+    color: white;
+    width: 420px;
+    margin: 3px;    
+    font-size: xx-large;
+    text-align: center;
+    background-image: linear-gradient(to top left,rgba(255, 0, 0, 0.6), rgba(0, 0, 255, 0.6));    
+    border-radius: 100px;
+
+}
+
+.resultado {
+    width: 420px;
+    font-size: xx-large;
+    margin: 3px;    
+    text-align: center;
+    border-radius: 100px;
+    
+}
+
+.botao {
+    color: white;
+    width: 100px;
+    font-size: xx-large;
+    margin: 3px;
+    background-image: linear-gradient(to top left,rgba(255, 0, 0, 0.6), rgba(0, 0, 255, 0.6));
+    border-radius: 100px;
+    
+    
+}
+
+.botaoC {
+    color: white;
+    background-color: rgba(0, 255, 21, 0.7);
+    width: 100px;
+    font-size: xx-large;
+    margin: 3px;
+    border-radius: 100px;
+}
+
+.botaoDel {
+    color: white;
+    background-color: rgba(255, 0, 0, 0.7);
+    width: 100px;
+    font-size: xx-large;
+    margin: 3px;
+    border-radius: 100px;
+}
+
+.botao0 {
+    color: white;
+    width: 210px;
+    font-size: xx-large;
+    margin: 3px;    
+    background-image: linear-gradient(to top left,rgba(255, 0, 0, 0.6), rgba(0, 0, 255, 0.6));
+    border-radius: 100px;
+}
+
+.botaoResultado {
+    color: white;
+    background-color: rgba(0, 255, 21, 0.7);
+    width: 210px;
+    font-size: xx-large;
+    margin: 3px;
+    border-radius: 100px;
+    
+}
+
+.botao0:hover, .botao:hover {
+    background-image: linear-gradient(to top left, rgba(0, 0, 255, 0.6), rgba(255, 0, 0, 0.6));
+}
+
+.botaoResultado:hover, .botaoC:hover {
+    background-color: rgba(0, 255, 21, 0.8);    
+}
+
+.botaoDel:hover {
+    background-color: rgba(255, 0, 0, 0.8);    
+}

@@ -5,10 +5,11 @@ body {
 }
 
 #container {
-    width: 1080px;
+    width: 1080px; /* Centralizando tela */
     margin: 0 auto;
 }
 
+/* Links Barra de Navegação */
 a:link, a:active, a:visited {
     color: #af670a;
     text-decoration: none;
@@ -18,8 +19,8 @@ a:hover {
     color: #226115;
 }
 
-/*Logo */
 
+/* Logo */
 #logo h1 {
     float: left;
 }
@@ -33,7 +34,6 @@ a:hover {
 }
 
 /* Barra de Navegação */
-
 header {
     padding: 15px 0;
     height: 55px;
@@ -61,7 +61,6 @@ nav ul li a:hover {
 }
 
 /* Principal */
-
 #conteudo {
     width: 710px;
     margin-bottom: 20px;
@@ -89,7 +88,7 @@ article#exposicoes {
 article#historia {
     float: left;
     width: 310px;
-    margin: 15px 0 0 20px;
+    margin: 15px 0px 0px 20px;
 }
 
 h4 {
@@ -114,6 +113,7 @@ aside {
     float: right;
 }
 
+/* Faça uma visita */
 input {
     height: 20px;
     width: 80px;
@@ -148,13 +148,14 @@ section#visita {
     margin-top: 10px;
 }
 
+/* Galeria */
 section#galeria {
     padding: 0 30px 0 30px;
 }
 
 section#galeria a {
     display: block;
-    padding: 15px;
+    padding: 18px;
     background: url(../img/fundo-foto.png) no-repeat;
     float: left;
 }
@@ -165,7 +166,7 @@ footer {
     clear: both;
     padding: 20px 0;
     text-align: center;
-    background: url(../img/fundo-rodape.png) no-repeat center top;
+    background: url(../img/fundo-rodape.png) repeat-y center top;
     margin-top: 20px;
 }
 

@@ -1106,11 +1106,12 @@ if (false) {
     aluno e uma mensagem “APROVADO” se a quantidade de acertos for maior ou igual a 12;
 e mostre uma mensagem de “REPROVADO”, caso contrário.*/
 if (false) {
-
   let vetorG = [];
-  let quantQuestions = parseInt(prompt("Insira a quantidade de questões da prova: "));
+  let quantQuestions = parseInt(
+    prompt("Insira a quantidade de questões da prova: ")
+  );
   let acertos = parseInt(prompt("Insira a quantidade mínima de acertos: "));
-  
+
   while (vetorG.length < quantQuestions) {
     let promptAnswers = prompt("Insira o gabarito da prova: ").toUpperCase();
     if (
@@ -1126,32 +1127,45 @@ if (false) {
     }
   }
   console.log(`Gabarito: ${vetorG}`);
-  
+
   let promptQuant = parseInt(prompt("Insira a quantidade de crianças: "));
-  
+
   for (let i = 0; i < promptQuant; i++) {
     let answersCorrect = 0;
     let vetorAluno = [];
     let student = prompt("Insira o nome do aluno: ");
     while (vetorAluno.length < quantQuestions) {
-      let promptStudentAnswers = prompt("Insira as respostas do aluno: ").toUpperCase();
-      if (promptStudentAnswers === "A" || promptStudentAnswers === "B" || promptStudentAnswers === "C" || promptStudentAnswers === "D" || promptStudentAnswers === "E") {
+      let promptStudentAnswers = prompt(
+        "Insira as respostas do aluno: "
+      ).toUpperCase();
+      if (
+        promptStudentAnswers === "A" ||
+        promptStudentAnswers === "B" ||
+        promptStudentAnswers === "C" ||
+        promptStudentAnswers === "D" ||
+        promptStudentAnswers === "E"
+      ) {
         vetorAluno.push(promptStudentAnswers);
-        if (vetorAluno[vetorAluno.length - 1] === vetorG[vetorAluno.length - 1]) {
+        if (
+          vetorAluno[vetorAluno.length - 1] === vetorG[vetorAluno.length - 1]
+        ) {
           answersCorrect++;
         }
       } else {
         console.log("Resposta inválida, insira as respostas do aluno: ");
       }
     }
-    
+
     if (answersCorrect >= acertos) {
-      console.log(`${student} acertou ${answersCorrect} questões e foi: APROVADO`);
+      console.log(
+        `${student} acertou ${answersCorrect} questões e foi: APROVADO`
+      );
     } else {
-      console.log(`${student} acertou ${answersCorrect} questões e foi: REPROVADO`);
+      console.log(
+        `${student} acertou ${answersCorrect} questões e foi: REPROVADO`
+      );
     }
   }
-  
 }
 
 /*Exercício 38. Elabore um algoritmo que leia um vetor de 6 posições e após sua leitura leia outra
@@ -1164,164 +1178,178 @@ variável:
 5- mostre o vetor.*/
 if (false) {
   let vetor = [];
-  
+
   while (vetor.length < 6) {
     let promptVetor = Number(prompt("Insira um número: "));
-    if(!isNaN(promptVetor)) {
-      vetor.push(promptVetor)
+    if (!isNaN(promptVetor)) {
+      vetor.push(promptVetor);
     }
   }
-  console.log(vetor)
-  
-  console.log("Digite 1 para somar os elementos.")
-  console.log("Digite 2 para o produto dos elementos.")
-  console.log("Digite 3 para a média dos elementos.")
-  console.log("Digite 4 para ordenar em ordem crescente.")
-  console.log("Digite 5 para mostrar o vetor.")
-  
+  console.log(vetor);
+
+  console.log("Digite 1 para somar os elementos.");
+  console.log("Digite 2 para o produto dos elementos.");
+  console.log("Digite 3 para a média dos elementos.");
+  console.log("Digite 4 para ordenar em ordem crescente.");
+  console.log("Digite 5 para mostrar o vetor.");
+
   let promptResp = parseInt(prompt("Insira um número de 1-5: "));
-  while (promptResp !== 1 && promptResp !== 2 && promptResp !== 3 && promptResp !== 4 && promptResp !== 5) {
+  while (
+    promptResp !== 1 &&
+    promptResp !== 2 &&
+    promptResp !== 3 &&
+    promptResp !== 4 &&
+    promptResp !== 5
+  ) {
     promptResp = parseInt(prompt("Opção inválida, insira um número de 1-5: "));
   }
-  
+
   let soma = 0;
   if (promptResp === 1) {
     for (let i = 0; i < vetor.length; i++) {
-      soma += vetor[i]
+      soma += vetor[i];
     }
-    console.log(`A soma é ${soma}.`)
+    console.log(`A soma é ${soma}.`);
   }
-  
+
   let produto = 1;
   if (promptResp === 2) {
     for (let i = 0; i < vetor.length; i++) {
-      produto *= vetor[i]
+      produto *= vetor[i];
     }
-    console.log(`O produto é ${produto}.`)
+    console.log(`O produto é ${produto}.`);
   }
-  
+
   let somaMediaedia = 0;
   if (promptResp === 3) {
     for (let i = 0; i < vetor.length; i++) {
       somaMedia += vetor[i];
     }
     media = somaMedia / vetor.length;
-    console.log(`A média é ${media}.`)
+    console.log(`A média é ${media}.`);
   }
-  
+
   if (promptResp === 4) {
-    vetor.sort(function(a, b) {
-      return a - b
-    })
-    console.log(vetor)
+    vetor.sort(function (a, b) {
+      return a - b;
+    });
+    console.log(vetor);
   }
-  
+
   if (promptResp === 5) {
-    console.log(vetor)
+    console.log(vetor);
   }
-  
 }
 
 /*Exercício 39. Faça um algoritmo que leia um vetor (A) de 100 posições. Em seguida, compacte o
 vetor, retirando os valores nulos e negativos. Coloque o resultado no vetor B.*/
 if (false) {
   let vetorA = [];
-  
+
   while (vetorA.length < 100) {
     /*let min = -100;
     let max = 100;
     let promptVetorA = Math.floor(Math.random() * (max - min) + min);*/
     let promptVetorA = Number(prompt("Insira um número: "));
     if (!isNaN(promptVetorA)) {
-      vetorA.push(promptVetorA)
+      vetorA.push(promptVetorA);
     }
   }
   console.log(...vetorA);
   console.log();
-  
+
   vetorB = [];
-  for (let i = 0; i < vetorA.length/*100*/; i++) {
+  for (let i = 0; i < vetorA.length /*100*/; i++) {
     if (vetorA[i] <= 0) {
       vetorB.push(vetorA[i]);
-      vetorA.splice(i, 1); /*corta um elemento, mas não remove a quantidade de index*/
-      i--; /*vai fazer com que ele continue no mesmo index*//*se nn tivesse isso ele pularia se tivesse 2 números negativos lado a lado*/
+      vetorA.splice(
+        i,
+        1
+      ); /*corta um elemento, mas não remove a quantidade de index*/
+      i--; /*vai fazer com que ele continue no mesmo index*/ /*se nn tivesse isso ele pularia se tivesse 2 números negativos lado a lado*/
     }
   }
-  
-  console.log(...vetorA)
-  console.log()
-  console.log(...vetorB)
+
+  console.log(...vetorA);
+  console.log();
+  console.log(...vetorB);
 }
-  
-  /*Exercício 40. Faça um algoritmo que leia um vetor de 5 elementos inteiros, correspondentes ao
+
+/*Exercício 40. Faça um algoritmo que leia um vetor de 5 elementos inteiros, correspondentes ao
   resultado oficial da Loto. A seguir, leia 50 conjuntos de vetores (com 5 elementos inteiros
   cada), representando as apostas feitas. Compare os números das apostas com o
   resultado oficial e mostre uma mensagem ("Ganhador") se todos os números
   corresponderem ao resultado oficial. (Observação: não é necessário procurar por ternos
   e quadras, apenas por quinas.)*/
 if (false) {
-    // Gerar os números da ProgramaCena:
-    const vetorWinner = new Set(); /* new Set() = aceita apenas números diferentes */
-  
-    while (vetorWinner.size < 5) {
-      /* .size = similar ao .length mas para o método new Set() */
-      // vetorWinner.add(Math.floor(Math.random() * 60) + 1); /* .add = similar ao .push */
-      let promptQuina = parseInt(prompt("Insira um número da quina: "));
+  // Gerar os números da ProgramaCena:
+  const vetorWinner =
+    new Set(); /* new Set() = aceita apenas números diferentes */
+
+  while (vetorWinner.size < 5) {
+    /* .size = similar ao .length mas para o método new Set() */
+    // vetorWinner.add(Math.floor(Math.random() * 60) + 1); /* .add = similar ao .push */
+    let promptQuina = parseInt(prompt("Insira um número da quina: "));
     while (promptQuina < 0 || promptQuina > 60 || isNaN(promptQuina)) {
       promptQuina = parseInt(prompt("Número inválido, insira novamente: "));
     }
-      vetorWinner.add(promptQuina); /* .add = similar ao .push */
+    vetorWinner.add(promptQuina); /* .add = similar ao .push */
+  }
+
+  console.log(
+    `Os números da Loto foram: ${Array.from(vetorWinner)
+      .sort((a, b) => a - b) // Coloca os elementos em ordem
+      .join(", ")}` // Separa os elementos por ", "
+  );
+
+  // Gerar os números dos apostadores:
+
+  for (let i = 1; i <= 50; i++) {
+    let vetorChoosen = new Set();
+
+    while (vetorChoosen.size < 5) {
+      vetorChoosen.add(Math.floor(Math.random() * 60) + 1);
     }
-  
-    console.log(`Os números da Loto foram: ${Array.from(vetorWinner).sort((a, b) => a - b) // Coloca os elementos em ordem
-        .join(", ")}` // Separa os elementos por ", "
+
+    console.log(
+      `Os números escolhidos foram: ${Array.from(vetorChoosen)
+        .sort((a, b) => a - b)
+        .join(", ")}`
     );
-  
-    // Gerar os números dos apostadores:
-    
-    for (let i = 1; i <= 50; i++) {
-      let vetorChoosen = new Set();
-      
-      while (vetorChoosen.size < 5) {
-        vetorChoosen.add(Math.floor(Math.random() * 60) + 1);
+
+    // Números de respostas corretas:
+    let answersRigth = 0;
+    for (num of vetorWinner) {
+      // for of para pegar os elementos da vetor vetorWinner
+      if (vetorChoosen.has(num)) {
+        // conferir se o vetorChoosen tem o mesmo número do vetorWinner
+        answersRigth++; // se sim, respotas corretas +1
       }
-      
-      console.log(`Os números escolhidos foram: ${Array.from(vetorChoosen).sort((a, b) => a - b).join(", ")}`);
-      
-      // Números de respostas corretas:
-      let answersRigth = 0;
-      for (num of vetorWinner) {
-        // for of para pegar os elementos da vetor vetorWinner
-        if (vetorChoosen.has(num)) {
-          // conferir se o vetorChoosen tem o mesmo número do vetorWinner
-          answersRigth++; // se sim, respotas corretas +1
-        }
-      }
-      if (answersRigth === 5) {
-        console.log(`GANHADOR`);
-      } else if (answersRigth > 0) {
-        console.log(`O apostador ${i} acertou ${answersRigth} número(s).`);
-      } else {
-        console.log(`O apostador ${i} acertou NENHUM número.`);
-      }
-      console.log()
     }
- 
+    if (answersRigth === 5) {
+      console.log(`GANHADOR`);
+    } else if (answersRigth > 0) {
+      console.log(`O apostador ${i} acertou ${answersRigth} número(s).`);
+    } else {
+      console.log(`O apostador ${i} acertou NENHUM número.`);
+    }
+    console.log();
+  }
 }
-  /*Exercício 41. Dado o objeto pessoa com propriedades nome e idade, acesse e imprima o valor de
+/*Exercício 41. Dado o objeto pessoa com propriedades nome e idade, acesse e imprima o valor de
 idade. Adicione uma nova propriedade chamada email ao objeto pessoa que já possui
 nome e idade.*/
 if (false) {
-let pessoa = {
-  nome: "Bryan",
-  idade: 23,
-}
+  let pessoa = {
+    nome: "Bryan",
+    idade: 23,
+  };
 
-console.log(pessoa.idade)
+  console.log(pessoa.idade);
 
-pessoa.email = "bryanstoise@gmail.com"
+  pessoa.email = "bryanstoise@gmail.com";
 
-console.log(pessoa)
+  console.log(pessoa);
 }
 
 /*Exercício 42. Crie um objeto chamado dados que contém várias propriedades, incluindo números,
@@ -1331,10 +1359,10 @@ if (false) {
   let dados = {
     numeros: 10,
     strings: "ovo",
-    arrays: [1,2,3,4],
-    hobbies: ["surfar","nadar","pescar"]
-  }
-  
+    arrays: [1, 2, 3, 4],
+    hobbies: ["surfar", "nadar", "pescar"],
+  };
+
   function retornarNovoObjeto(obj) {
     let newObject = {};
     for (let index in obj) {
@@ -1344,11 +1372,112 @@ if (false) {
     }
     return newObject;
   }
-  
-  console.log(retornarNovoObjeto(dados))
-  
+
+  console.log(retornarNovoObjeto(dados));
 }
 
 /*Exercício 43. Dado dois objetos, obj1 e obj2, escreva uma função que crie um novo objeto
 combinando as propriedades de ambos, onde as propriedades de obj2 têm precedência
 sobre as do obj1 em caso de conflitos.*/
+if (false) {
+  let obj1 = {
+    name: "Ventilador",
+    watts: "20w",
+    price: 149,
+  };
+
+  let obj2 = {
+    name: "Carro",
+    brand: "Wolskwagen",
+    price: 10000,
+  };
+
+  function combinarObjetos(obj1, obj2) {
+    let obj3 = Object.assign(obj1, obj2);
+    return obj3;
+  }
+
+  // combinarObjetos = (obj1, obj2) => Object.assign(obj1, obj2);
+
+  console.log(combinarObjetos(obj1, obj2));
+}
+
+/* Exercício 44. Escreva uma função que conte quantas propriedades do tipo string existem em um
+objeto e retorne esse número.*/
+if (false) {
+  let objeto = {
+    name: "Marcelo",
+    age: 40,
+    job: "keychain",
+    single: false,
+    lastName: "Da Silva",
+    pets: 3,
+    company: "Chaveiro Confiança"
+  };
+  
+  contarStrings = (objeto) => {
+    let quantStrings = 0;
+    for (let index in objeto) {
+    if (typeof objeto[index] === "string") {
+      quantStrings++;
+    }
+  }
+  return quantStrings;
+};
+
+console.log(contarStrings(objeto));
+
+}
+
+/*Exercício 45. Dado um array de strings, crie um objeto onde cada string é uma chave, e seu valor é
+o número de vezes que a string aparece no array.*/
+if (false) {
+  let array = ["Bryan", "green", "blue", "black", "black", "BLACK", "Bryan"];
+
+  function criarObjeto(array) {
+    let obj = {};
+  
+    for (let i = 0; i < array.length; i++) {
+  
+      if (obj[array[i]]) {
+        obj[array[i]]++;
+      } else {
+        obj[array[i]] = 1;
+      }
+    
+  }
+  
+   return obj
+  }
+  
+  console.log(criarObjeto(array))
+}
+
+/*Exercício 46. Suponha que você tem um array de objetos onde cada objeto representa uma venda
+com vendedor e valor. Escreva uma função que retorne um objeto que sumarize o total
+de vendas por vendedor.*/
+
+let array = [
+  {vendedor: "Carlos", valor: 129.60},
+  {vendedor: "Carlos", valor: 56.90},
+  {vendedor: "João", valor: 29.99},
+  {vendedor: "Carlos", valor: 129.60},
+  {vendedor: "João", valor: 54.90},
+  ]
+  
+  function totalVendas(array, vendedor) {
+  let venda = 0;
+  for (let i = 0; i <array.length; i++) {
+        
+      if (array[i].vendedor === vendedor) {
+        venda+=array[i].valor;
+      }
+    }
+    return venda
+}
+
+const vendedorCarlos = totalVendas(array, "Carlos");
+console.log(`O vendedor Carlos vendeu R$ ${vendedorCarlos.toFixed(2).replace(".", ",")} esse mês.`);
+
+const vendedorJoão = totalVendas(array, "João");
+console.log(`O vendedor João vendeu R$ ${vendedorJoão.toFixed(2).replace(".", ",")} esse mês.`);

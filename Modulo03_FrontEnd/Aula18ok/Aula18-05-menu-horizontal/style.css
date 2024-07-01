@@ -21,7 +21,6 @@ nav {
 
 li {
     display: inline-block;
-    border-top: 3px solid white;
     padding: 20px;
     padding-top: 10px;
     color: white;
@@ -33,4 +32,9 @@ li {
 a {
     color: white;
     text-decoration: none;
+}
+
+#index, #servicos, #time, #trabalhos {
+    border-top: 3px solid white;
+
 }

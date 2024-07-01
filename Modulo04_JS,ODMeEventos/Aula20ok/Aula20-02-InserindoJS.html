@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Importando JS</title>
+
+    <script>
+        let numero = prompt('Digite um número: ')
+
+        if (numero % 2 === 0) {
+            document.write('Olá, o número que você digitou é par.  ')
+        }
+           
+        
+        /* Exercício 01: Capturar NOME e IDADE */
+        let name = prompt('Qual seu nome? ');
+        let age = prompt('Qual sua idade? ');
+        
+        document.write(`Seu nome é ${name} e sua idade é ${age}. `)
+        
+        /* Exercício 02: Calcular média */
+        let arrayMedia = [];                
+        let quantAlunos = parseInt(prompt('Quantos alunos? '));
+
+        while (arrayMedia.length < quantAlunos) {
+            let media = parseInt(prompt('Qual a nota? '));
+            arrayMedia.push(media)
+        }
+
+        let soma = 0;
+        for(let i = 0; i < arrayMedia.length; i++) {
+            soma += arrayMedia[i];
+        }
+        
+        let mediaReal = soma / arrayMedia.length;
+
+        document.write(`A média é ${mediaReal}.`)
+    </script>
+    
+</head>
+<body>
+    
+</body>
+</html>

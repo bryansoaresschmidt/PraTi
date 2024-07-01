@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eventos</title>
+
+    <script>
+      function eventoExemplo() {
+        document.write("Evento Aconteceu!");
+      }
+    </script>
+
+  </head>
+
+  <!-- Evento de Página -->
+  <body onresize="eventoExemplo()"> <!-- Quando redimencionar a página -->
+  <body onscroll="eventoExemplo()"> <!-- Quando scrolar a página -->
+
+    <!-- Eventos de Mouse -->
+    <div style="background-color: blue; height: 50px; width: 150px; float: left" onclick="eventoExemplo()">
+        <p style="text-align: center; color: white;">Clique Padrão</p>
+    </div>
+    
+    <div style="background-color: green; height: 50px; width: 150px; float: left" onDblclick="eventoExemplo()">
+        <p style="text-align: center; color: white;">Duplo clique</p>
+    </div>
+    
+    <div style="background-color: red; height: 50px; width: 150px; float: left" onmouseout="eventoExemplo()">
+        <p style="text-align: center; color: white;">Passar o mouse</p>
+    </div>
+
+    <div style="background-color: black; height: 50px; width: 150px; float: left" onmouseup="eventoExemplo()">
+        <p style="text-align: center; color: white;">Clique e arrastar</p>
+    </div>
+    
+    <!-- Eventos de Teclado --><br><br><br><br><br>
+    <input placeholder="On Key Down" onkeydown="eventoExemplo()" type="text"> <!-- Quando qualquer tecla do teclado é pressionada -->
+    <input placeholder="On Key Up" onkeyup="eventoExemplo()" type="text"> <!-- Só aciona depois de soltar a tecla -->
+    <input placeholder="On Key Press" onkeypress="eventoExemplo()" type="text"> <!-- Só funciona quando caracteres são pressionados -->
+
+    <!-- Eventos de Formulário --><br><br><br>
+    <select onchange="eventoExemplo()"> <!-- Usuário muda a opção -->
+        <option value="10">Grêmio</option>
+        <option value="9">onchange</option>
+    </select>
+
+    <select onfocus="eventoExemplo()"> <!-- Usuário entra num elemento -->
+        <option value="10">Grêmio</option>
+        <option value="9">onfocus</option>
+    </select>
+
+    <select onblur="eventoExemplo()"> <!-- Usuário sai de um elemento -->
+        <option value="10">Grêmio</option>
+        <option value="9">onblur</option>
+    </select>
+  </body>
+</html>

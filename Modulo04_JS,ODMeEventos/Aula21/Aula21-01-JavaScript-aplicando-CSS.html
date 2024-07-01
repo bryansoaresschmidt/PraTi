@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript aplicando HTML (DOM)</title>
+
+    <script>
+        function trocarEstilizacao(color) {
+            document.getElementById("body").style.background = color
+            // document.body.style.background = color
+        }
+    </script>
+</head>
+<body id="body">
+    <button type="button" onclick="trocarEstilizacao('white')">Branco</button>
+    <button type="button" onclick="trocarEstilizacao('blue')">Azul</button>
+    <button type="button" onclick="trocarEstilizacao('green')">Verde</button>
+    <button type="button" onclick="trocarEstilizacao('red')">Vermelho</button>
+    <button type="button" onclick="trocarEstilizacao('orange')">Laranja</button>
+    <button type="button" onclick="trocarEstilizacao('yellow')">Amarelo</button>
+    <button type="button" onclick="trocarEstilizacao('pink')">Rosa</button>
+    <button type="button" onclick="trocarEstilizacao('purple')">Roxo</button>
+    <button type="button" onclick="trocarEstilizacao('gray')">Cinza</button>
+    <button type="button" onclick="trocarEstilizacao('black')">Preto</button>
+    
+</body>
+</html>

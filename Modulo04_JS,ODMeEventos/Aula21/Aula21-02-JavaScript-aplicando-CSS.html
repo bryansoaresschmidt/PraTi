@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript aplicando CSS (DOM)</title>
+
+    <style>
+        .estilo {
+            background-color: black;
+            color: white;
+            width: 100px;
+            height: 300px;
+            text-align: center;
+        }
+
+        .estiloAzul {
+            background-color: blue;
+            color: white;
+            width: 100px;
+            height: 300px;
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+            position: relative;
+            top: 30px;        
+        }
+
+    </style>
+
+    <script>
+        function trocarEstilizacao() {
+            document.getElementById("quadrado").className = 'estilo'
+        }
+        function trocarEstilizacaoAzul() {
+            document.getElementById("quadrado").className = 'estiloAzul'
+        }
+    </script>
+</head>
+<body>
+    <button type="button" onclick="trocarEstilizacao()">Trocar Estilização</button>
+    <button type="button" onclick="trocarEstilizacaoAzul()">Trocar Estilização</button>
+    <hr>
+    <div style="width: 300px; height: 100px;" id="quadrado">
+        <h1>Teste</h1>
+    </div>
+    
+</body>
+</html>
