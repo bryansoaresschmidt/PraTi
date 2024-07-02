@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tratamento de Erros (Try Catch)</title>
+
+    <script>
+        let video = Array();
+
+        video[1] = Array();
+        video[1]['Nome'] = 'Fullmetal Alquimist';
+        video[1]['Categoria'] = 'Anime';
+
+        console.log(video)
+
+        function getVideo(video) {
+            try {
+                console.log(video[0]['Nome'])
+                console.log('try: A aplicação não morreu.')
+            } catch (error) {
+                tratarErro(error)                
+                console.log('catch: Houve um problema externo.')
+
+                throw new Error ('throw: Houve um problema mas já estamos trabalhando na solução.')
+            } finally {
+                console.log('finally: Sempre passa por aqui.')
+            }
+        }
+
+        function tratarErro(erro) {
+            console.log('O erro é: ' + erro)
+        }
+
+        getVideo(video)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

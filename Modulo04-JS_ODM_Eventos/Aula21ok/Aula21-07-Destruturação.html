@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desestruturação</title>
+
+    <script>
+
+
+        /* Desestruturação: Array Simples */
+        let filmes = ['As Branquelas', 'Shrek', 'Megamente'];
+        
+        // var1 = filmes[0];
+        // var2 = filmes[1];
+        // var3 = filmes[2];
+        
+        let [a, b, , c = 'Poderoso Chefão', d = 'Clube da Luta'] = filmes; 
+        /* Atribuir variáveis a elementos de um array */
+        /* Caso não tenha 'c' ele vira 'Poderoso Chefão' */
+        
+        console.log(filmes)
+        console.log(a, b, c, d)
+        
+        
+        /* Desestruturação: Array Múltiplo */
+        let frutas = [['Maçã', 'Pera', 'Abacaxi'],['Pêssego','Melancia', 'Manga']];
+        
+        let [ , [, x]] = frutas;
+        console.log(frutas);
+        console.log(x);
+        
+        let produto = {
+            nome: 'Bicicleta',
+            preco: 1080,
+            detalhes: {
+                fabricante: 'Caloi',
+                modelo: 'Aro 29'
+            }
+        }
+        
+        let {nome, preco} = produto;
+        console.log(nome, preco)
+        
+        let {preco: z, nome: y} = produto;
+        console.log(y, z)
+        
+        let {detalhes: {fabricante, modelo}} = produto;
+        console.log(fabricante, modelo)
+        
+
+        /* Desestruturação: Array com Função */
+        let arr = [10, 20, 30, 40]
+
+        function mostrarArray([a, b, , c]) {
+            console.log(a, b, c)
+        }
+        mostrarArray(arr)
+
+        let obj = {
+            a: 10,
+            b: 20,
+            c: 30,
+            d: 40,
+            e: 50
+        }
+
+        function mostrarObjeto({a, b, c, d, e}){
+            console.log(e)
+        }
+
+        mostrarObjeto(obj)
+
+
+        /* Desestruturação: Usando ... */
+        let arra = [10, 20, 30, 40];
+        let [k,...resto] = arra;
+        console.log(resto)
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
