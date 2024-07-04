@@ -1,12 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
+@font-face {
+    font-family: 'Thunder';
+    src: url('./fonts/LeagueSpartan-VariableFont_wght.ttf') format('truetype');
+}
+
+/* Tipos de format() */
+
+/*
+opentype format (otf)
+truetype format (ttf)
+embedded-opentype
+truetype-att (Apple Advanced Typography)
+svg
+*/
 
 * {
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
 }
 
 html, body {
     height: 100%;
     width: 100%;
+}
+
+span {
+    color: green;
 }
 
 #barraNav {
@@ -17,8 +36,8 @@ html, body {
 #whatsapp {
     float: right;
     display: block;
-    height: 60px;
-    width: 200px;
+    height: 50px;
+    width: 190px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 1000;
     font-size: x-large;
@@ -30,10 +49,29 @@ html, body {
     border: none;
 }
 
+#whatsapp:hover {
+    color: green;
+    background-color: #FF9900;
+    font-size: 1.7em;
+    height: 60px;
+    width: 200px;
+    margin-top: 15px;
+    margin-right: 95px;
+    
+}
+
+#yellow {
+    float: inherit;
+    background-color: #FF9900;
+    height: 100px;
+    width: 200px;
+}
+
+
 
 /* Seção Início */
 #inicio {
-    height: 100%;
+    height: 80%;
 }
 
 #imagemEntrada {
@@ -43,7 +81,7 @@ html, body {
     position: relative;
     bottom: 50px;
     
-
+    
     width: 35%;
     border: 4px solid green;
 }
@@ -65,16 +103,16 @@ section#inicio aside {
     font-size: 1.5em;
 }
 
- #cliqueAqui {
+#cliqueAqui {
     text-decoration: none;
     color: white;
     
 }
 
-#liCliqueAqui {
+#buttonCliqueAqui {
     margin-top: 30px;
-    margin-left: 200px;
-    padding: 10px;
+    margin-left: 100px;
+    padding: 20px 0px;
     
     font-family: 'Trebuchet MS', sans-serif;
     text-transform: uppercase;
@@ -82,31 +120,73 @@ section#inicio aside {
     text-decoration: none;
     font-size: larger;
     font-weight: bolder;
-    width: 150px;
+    width: 400px;
+    height: 70px;
     color: white;
-    border: 2px solid green;
     background-color: green;
+    border: none;
+}
+
+#buttonCliqueAqui:hover {
+    color: green;
+    background-color: #FF9900;
+    margin-top: 25px;
+    font-size: 1.3em;
+    width: 410px;
+    height: 80px;
+    border-radius: 150px;
 }
 
 #seta {
     transform: rotate(90deg);
     width: 80px;
     position: relative;
+    float: right;
     top: 150px;
-    right: 5px;
+    right: 250px;
 }
+
+
+
+/* Seção Imagem */
+#imagemSonho {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: -10px;
+}
+
+#imoveis {
+    text-align: center;
+    color: green;
+    background-color: #FF9900;
+    padding: 50px;
+    margin: 0px auto;
+    font-family: 'Thunder';
+    font-size: 3em;
+    text-transform: uppercase;
+    margin-bottom: 100px;
+}
+
 
 /* Seção Casas */
-#casaGlorinha {
-    float: left;
-    margin-left: 100px;
+
+.casas {
+    position: relative;
+    margin-bottom: 75px;
+
 }
 
-#imagemEntrada2 {
+.casaGlorinha {
+    padding-left: 100px;
+    width: 600px;
+    height: 300px;
+}
+
+.imagemEntrada2 {
     float: right;
     display: inline-block;
     position: relative;
-    bottom: 50px;
+    bottom: 324px;
     
     
     width: 25%;
@@ -114,37 +194,18 @@ section#inicio aside {
     border-right: 300px solid green;
 }
 
-section#casas aside {
+.botaoVerMais {
     float: right;
-    text-align: center;
-    position: relative;
-    bottom: 270px;
-}
-
-#linkVerMais {
-    float: right;
-    position: relative;
-    left: 585px;
-    top: 80px;
-
-    background-color: white;
-    font-family: 'Trebuchet MS', sans-serif;
-    text-transform: uppercase;
-    list-style-type: none;
-    text-decoration: none;
-    font-weight: 650;
-    
-}
-
-#botaoVerMais {
-    display: block;
-    float: right;
-    position: relative;
-    left: 580px;
-    top: 70px;
-    text-decoration: none;
+    position: absolute;
+    right: 60px;
+    top: 100px;
     color: green;
     border: 0px;
     padding: 20px;
-    font-size: larger;    
+    font-size: larger;
+    border-radius: 20px;
+}
+
+.botaoVerMais:hover {
+    background-color: #FF9900;
 }
