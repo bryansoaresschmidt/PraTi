@@ -24,7 +24,7 @@
         <aside>
             <h1 id="titulo">Planeja se mudar para um <span>apto</span><br>ou <span>casa</span> de outro nível?</h1>
             <p id="subtitulo">Conheça agora os nossos melhores <span>imóveis</span> da região</p>
-            <a href="https://wa.me/message/SKJNNHP5F7YMH1" id="cliqueAqui"><button id="buttonCliqueAqui">Suba de Nível Agora Mesmo</button></a>
+            <a href="https://wa.me/message/SKJNNHP5F7YMH1"><button id="buttonCliqueAqui">Suba de Nível Agora Mesmo</button></a>
             <img id="seta" src="./images/seta.png" alt="Imagem de uma cozinha juntamente com sala de estar.">
         </aside>
     </section>
@@ -36,43 +36,71 @@
     
     
     <!--Imóveis selecionados a dedo:-->
-    <h1 id="imoveis">Imóveis selecionados a dedo:</h1>
+    <h1 id="imoveis">Imóveis selecionados a dedo...</h1>
     <section class="casas">
         <div class="casaGlorinha">
             <h1 class="h">Casa em Glorinha à 1km do Centro</h1>
-                <li>Área: 234m²</li><br>
-                <li>Vagas para carros: 3</li><br>
-                <li>Quartos: 2</li><br>
-                <li>Andares: 2</li><br>
-                <li>Banheiros: 3</li><br>
-                <li>Preço: R$ 450k</li><br>
+                <li>Área: 234m²</li>
+                <li>Vagas para carros: 3</li>
+                <li>Quartos: 2</li>
+                <li>Andares: 2</li>
+                <li>Banheiros: 3</li>
+                <li>Preço: R$ 450k</li>
         </div>
         <aside>
             <a href="#"><img class="imagemEntrada2" src="./images/Casa Dai/1cropped.JPG" alt="Imagem de uma cozinha juntamente com sala de estar."></a>
-            <a href="#"><button class="botaoVerMais">Ver mais fotos...</button></a>
+            <a href="#"><button class="botaoVerMaisFotos">Ver mais fotos...</button></a>
         </aside>
     </section>
 
     <section class="casas">
         <div class="casaGlorinha">
             <h1 class="h">Cobertura no Centro de Gravataí</h1>
-                <li>Área: 256m²</li><br>
-                <li>Vagas para carros: 1</li><br>
-                <li>Quartos: 3</li><br>
-                <li>Andares: 2</li><br>
-                <li>Banheiros: 3</li><br>
-                <li>Preço: R$ 590k</li><br>
+                <li>Área: 256m²</li>
+                <li>Vagas para carros: 1</li>
+                <li>Quartos: 3</li>
+                <li>Andares: 2</li>
+                <li>Banheiros: 3</li>
+                <li>Preço: R$ 590k</li>
         </div>
         <aside>
             <a href="#"><img class="imagemEntrada2" src="./images/Apto Ed. Açorianos/1.JPG" alt="Imagem de uma cozinha juntamente com sala de estar."></a>
-            <a href="#"><button class="botaoVerMais">Ver mais fotos...</button></a>
+            <a href="#"><button class="botaoVerMaisFotos">Ver mais fotos...</button></a>
         </aside>
     </section>
 
-    <section>
-        <form>
-            
+    <section class="container">
+        <div id="tituloForm">
+            <h1>Quer tirar mais dúvidas?</h1>
+        </div>
+        <div id="subTituloForm">
+            <p>Preencha para entrar na fila de espera...</p>
+        </div>
+        <form id="form" action="" method="post">
+            <fieldset>
+                <label for="nome">Nome:</label>
+                <input placeholder="Bryan Schmidt" type="text" name="nome" tabindex="1" required autofocus>
+            </fieldset>
+            <fieldset>
+                <label for="celular">Celular:</label>
+                <input placeholder="(51) 99528-0301" type="tel"  name="celular" tabindex="2" required>
+            </fieldset>
+            <fieldset>
+                <label for="duvida">Dúvidas:</label>
+                <input placeholder="Descreva sua dúvida aqui..." type="text" name="duvida" id="duvida" tabindex="3">
+            </fieldset>
+            <fieldset>
+                <input type="submit" name="enviar" id="enviar" tabindex="4">
+            </fieldset>
         </form>
+    </section>
+    <section>
+        <hr>
+        <footer id="rodape">
+            <a href="https://www.instagram.com/_bryanschmidt_/"><button id="linkInstagram">Desenvolvido por @_bryanschmidt_<img id="logoInstagram" src="/images/instagram.png"></button></a>
+            
+        </footer>
+
     </section>
     
 </body>
