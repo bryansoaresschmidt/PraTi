@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#nomeEmpresa {
+    color: white;
+    position: absolute;
+    top: 2vw;
+    left: 10vw;
+    font-size: 2.5vw;
+    font-weight: 600;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header {
+    
+    background-image: linear-gradient(to right, #00a6ff, #0084ff);
+    height: 7vw;
+    align-items: center;
+}
+
+#header ul {
+    float: right;
+    position: relative;
+    top: 1.5vw;
+    margin-right: 7vw;
+}
+
+#header li {
+    margin-right: 1vw;
+    display: inline-block;
+    text-align: center;
+    
+}
+#header a {
+    color: white;
+    background-color: #00a6ff;
+    transition: background-color 0.2s;
+    box-shadow: 0.2vw 0.2vw 0.15vw rgba(0, 0, 0, 0.2);
+    
+    &:hover {
+        background-color: white;
+        color: #0084ff;
+        color: #00a6ff;
+    }
+    &:active {
+        color: white;
+        background-color: #0084ff;
+    }
+    padding: 1vw;
+    display: inline-block;
+    align-items: center;
+    float: right;
+    font-size: 1.2vw;
+}
+
+

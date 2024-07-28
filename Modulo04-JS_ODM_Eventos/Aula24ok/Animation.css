@@ -1,0 +1,65 @@
+#box {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(255, 227, 229);
+  position: relative;
+}
+
+#box:hover {
+  animation-name: animation-boxes;
+  animation-duration: 3s;
+  animation-direction: alternate;
+  animation-iteration-count: 2;
+}
+
+/* #box:hover {
+  animation-name: animation-boxes;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: normal;
+  background-color: green;
+} */
+
+@keyframes animation-box {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animation-boxes {
+  from {
+    background: aqua;
+    border-radius: 3px;
+    top: 0;
+    left: 0;
+  }
+  to {
+    background: red;
+    border-radius: 300px;
+    top: 200px;
+    left: 200px;
+  }
+}
+
+/* @keyframes animation-box {
+    0% {
+        transform: rotate(0deg);
+        top: 0;
+        left: 0;
+    } 30% {
+        top: 58px;
+        left: 40px;
+    } 68% {
+        top: 58px;
+        left: 52px;
+    } 100% {
+        transform: rotate(360deg);
+        left: 100px;
+        top: 100px;
+    }
+} */

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Desenvolvendo App I</title>
+
+</head>
+<body>
+    <header id="header">
+        <div>
+            <div>
+                <p id="nomeEmpresa">Smartech Celulares</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">+ Fazer Cadastro</a></li>
+                    <li><a href="cadastros.html">Consultar Cadastros</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section>
+        <div>
+            <h1 id="titulo">Filtro de pesquisa:</h1>
+            <form>
+                <select name="brand" id="brand">
+                    <option value="Marca">Marca</option>
+                    <option value="Xiaomi">Xiaomi</option>
+                    <option value="Motorola">Motorola</option>
+                    <option value="Samsung">Samsung</option>
+                    <option value="Iphone">Iphone</option>
+                    <option value="LG">LG</option>
+                    <option value="Nokia">Nokia</option>
+                </select>
+
+                
+                <select name="year" id="year">
+                    <option value="Ano">Ano</option>
+                    <option value="2024">2024</option>
+                    <option value="2023">2023</option>
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                    <option value="2020">2020</option>
+                    <option value="2019">2019</option>
+                    <option value="2018">2018</option>
+                </select>
+                
+                <input type="text" id="model" name="model" placeholder="Modelo">
+                
+                <select name="ram" id="ram">
+                    <option value="Ano">RAM</option>
+                    <option value="32gb">32gb</option>
+                    <option value="16gb">16gb</option>
+                    <option value="8gb">8gb</option>
+                    <option value="4gb">4gb</option>
+                    <option value="3gb">3gb</option>
+                </select>
+
+                <select name="hd" id="hd">
+                    <option value="hd">Armazenamento</option>
+                    <option value="512gb">512gb</option>
+                    <option value="256gb">256gb</option>
+                    <option value="128gb">128gb</option>
+                    <option value="64gb">64gb</option>
+                    <option value="32gb">32gb</option>
+                </select>
+
+                <input type="number" id="price" name="price" placeholder="Preço">
+                
+            </form>
+            <div>
+                <button class="lupa">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <table>
+            <thead>
+                <tr>
+                    <th>Marca</th>
+                    <th>Ano</th>
+                    <th>Modelo</th>
+                    <th>RAM</th>
+                    <th>Armazenamento</th>
+                    <th>Preço</th>
+                </tr>
+            </thead>
+
+            <tbody id="listCellphones"></tbody>
+        </table>
+    </section>
+    
+    <script src="app-again.js"></script>
+</body>
+</html>

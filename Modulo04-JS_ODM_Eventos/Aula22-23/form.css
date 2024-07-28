@@ -1,0 +1,215 @@
+
+/* Formulário */
+#titulo {
+    margin-top: 3vw;
+    margin-left: 15vw;
+    font-size: 2vw;
+
+}
+form {
+    display: flex;
+    align-items: center;
+    margin-left: 10vw;
+
+    font-size: 3vw;
+    background-color: #0084ff;
+    background-image: linear-gradient(to right, #0084ff, #00a6ff);
+    border-radius: 1vw;
+
+    width: 60vw;
+    height: 5vw;
+}
+
+form #brand {
+    margin-left: 2vw;
+    width: 8vw;
+    text-align: center;
+}
+
+form #year {
+    width: 6vw;
+    text-align: center;
+}
+
+form #model {
+    text-indent: 0.5vw;
+}
+
+form #ram {
+    width: 7vw;
+    text-align: center;
+}
+
+form #hd {
+    width: 8vw;
+    text-align: center;
+}
+
+form #price {
+    text-indent: 0.5vw;
+    width: 8vw;
+    margin-right: 2vw;
+}
+
+select, input {
+    margin: 0 auto;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+
+    border: solid 0.1vw #0084ff;
+    border-radius: 0.5vw;
+    
+    font-size: 1.5vw;
+    width: 10vw;
+
+    &:hover {
+        border: solid 0.1vw #00a6ff;
+    }
+}
+
+/* Lista */
+#conteudo {
+    margin: 0 auto;
+    max-width: 90vw;
+    margin-top: 4vw;
+
+    padding: 1vw;
+    border-radius: 1vw;
+    background-color: #0084ff;
+
+}
+
+#listaCelulares {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0 auto;
+    margin: 1vw;
+}
+
+#listaCelulares li{
+    padding: 0.5vw;
+    background-color: white;
+    border-radius: 1vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1px 10px 4px rgba(0, 0, 0, 0.2);
+}
+
+.novoCelular {
+    font-size: 1.4vw;
+    margin-left: 1vw;
+}
+
+/* Botões */
+.mais {
+    float: right;
+    position: absolute;
+    top: 13.85vw;
+    right:  24vw;
+
+    cursor: pointer;
+
+    padding: 0.7vw;
+    color: white;
+    background-color: rgb(0, 200, 0);
+    transition: background-color 0.2s;
+    &:hover {
+        background-color: rgb(0, 210, 0);
+        padding: 0.5vw;
+    }
+    &:active {
+        background-color: rgb(0, 170, 0);
+    }
+    
+    border: none;
+    border-radius: 1vw;
+    
+    font-size: 2vw;
+    width: 4.5vw;
+    height: 4.5vw;
+}
+
+.lupa {
+    float: right;
+    position: absolute;
+    top: 13.85vw;
+    right:  18vw;
+    
+    cursor: pointer;
+    
+    color: white;
+    background-color: #00a6ff;
+    transition: background-color 0.2s;
+    &:hover {
+        background-color: #0084ff;
+        padding: 0.5vw;
+    }
+    &:active {
+        background-color: #0066c5;
+    }
+    border: none;
+    border-radius: 1vw;
+    
+    padding: 0.8vw;
+    
+    font-size: 2vw;
+    width: 4.5vw;
+    height: 4.5vw;
+    
+}
+
+.editar {
+    /*float: right;
+    position: absolute;
+    top: 25vw;
+    right:  13vw;*/
+    
+    cursor: pointer;
+    
+    color: white;
+    background-color: #0084ff;
+    transition: background-color 0.2s;
+    &:hover {
+        background-color: #00a6ff;
+        
+    }
+    &:active {
+        background-color: #0066c5;
+    }
+    border: none;
+    border-radius: 1vw;
+    
+    font-size: 1.5vw;
+    width: 3.5vw;
+    height: 3.5vw;
+    
+}
+
+.lixeira {
+    /*float: right;
+    position: absolute;
+    top: 25vw;
+    right:  8vw;*/
+    
+    cursor: pointer;
+    
+    color: white;
+    background-color: rgb(220, 0, 0);
+    transition: background-color 1s;
+    &:hover {
+        background-color: rgb(250, 0, 0);
+    }
+    &:active {
+        background-color: rgb(200, 0, 0);
+    }
+    
+    border: none;
+    border-radius: 1vw;
+    
+    height: 4vw;
+
+    font-size: 1.5vw;
+    width: 3.5vw;
+    height: 3.5vw;
+}

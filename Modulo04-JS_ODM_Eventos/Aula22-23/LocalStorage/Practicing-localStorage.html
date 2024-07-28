@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practicing-localStorage</title>
+</head>
+<body>
+    <h1>Learning LocalStorage</h1>
+    <form id="form">
+        <h3>Preencha o formulário:</h3>
+        <input type="text" name="name" id="name" placeholder="Digite seu nome..." required/>
+        <br>
+        <input type="text" name="password" id="password" placeholder="Digite sua senha..." minlength="8" required/>
+        <br>
+        <input type="submit" value="Enviar"/>
+    </form>
+
+    <div id="welcome" style="display: none;">
+        <h3>Seja bem-vindo, <span id="username"></span>!</h3>
+        <button id="logout">Sair</button>
+    </div>
+    
+    <script src="Practicing-localStorage.js"></script>
+</body>
+</html>

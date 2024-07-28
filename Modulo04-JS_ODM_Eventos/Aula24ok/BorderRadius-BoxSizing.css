@@ -1,0 +1,14 @@
+#box {
+    width: 200px;
+    height: 200px;
+    background-color: #b9c941;
+    margin: 10px;
+    border-radius: 10px 50px;
+
+    padding: 10px;
+    box-sizing: border-box; /* Ele muda o comportamento do padding, o ponto de referência das medidas totais da caixa */
+}
+
+.border {
+    border-radius: 200px 0;
+}

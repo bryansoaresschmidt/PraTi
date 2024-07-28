@@ -1,0 +1,30 @@
+#box {
+    width: 400px;
+    height: 400px;
+    /* background: linear-gradient(0.25turn, red, green, yellow); */
+    /* background: linear-gradient(to left, red, green, yellow); */
+    /* background: linear-gradient(90deg, red, green, yellow); */
+    background: 
+linear-gradient(217deg, rgba(255,0,0,0.8), rgba(255,0,0,0) 70%),
+linear-gradient(127deg, rgba(0,255,0,0.8), rgba(0,255,0,0) 70%),
+linear-gradient(336deg, rgba(0,0,255,0.8), rgba(0,0,255,0) 70%);
+}
+
+#box2 {
+    width: 400px;
+    height: 400px;
+    background: repeating-linear-gradient(#00ff00, #008cff 50px);
+    background: repeating-radial-gradient(#00ff00, #008cff 50px);
+    background: conic-gradient(#00ff00, #008cff, white, orange, red, pink, purple);
+    background: repeating-conic-gradient(
+        from 45deg at 20% 30%,
+        brown 0deg 5deg,
+        darkgoldenrod 5deg 15deg,
+        chocolate 15deg 30deg,
+        rgb(219, 150, 0) 30deg 40deg);
+    background: repeating-conic-gradient(
+        red 0%,
+        yellow 15%,
+        red 33%
+    );
+}

@@ -50,6 +50,7 @@ span {
     border-radius: 20px;
     border: none;
     cursor:pointer;
+    transition: 0.8s;
     &:hover {
         color: green;
         background-color: #FF9900;
@@ -129,6 +130,7 @@ section#inicio aside {
     background-color: green;
     border: none;
     cursor:pointer;
+    transition: 0.8s;
     &:hover {
         color: green;
         background-color: #FF9900;
@@ -221,6 +223,7 @@ li {
     font-size: 1.5vw;
     border-radius: 20px;
     cursor:pointer;
+    transition: 0.8s;
     &:hover {
         background-color: #FF9900;
         font-size: 1.8vw;
@@ -231,7 +234,7 @@ li {
 
 
 /*  Formulário */
-.container {
+.containerM {
     position: relative;
     display: inline-block;
     margin-left: 50%;
@@ -325,6 +328,7 @@ input {
     font-size: 2vw;
     text-transform: uppercase;
     text-indent: -1px;
+    transition: 0.5s;
     &:hover {
         font-size: 2.1vw;
     }
@@ -370,5 +374,8 @@ input {
     top: 0.2vw;
     left: 0.6vw;
     &:hover {
+        width: 1.6vw;
+        top: 0.3vw;
+
     }
 }

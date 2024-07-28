@@ -1456,28 +1456,50 @@ if (false) {
 /*Exercício 46. Suponha que você tem um array de objetos onde cada objeto representa uma venda
 com vendedor e valor. Escreva uma função que retorne um objeto que sumarize o total
 de vendas por vendedor.*/
+if (false){
 
-let array = [
-  {vendedor: "Carlos", valor: 129.60},
-  {vendedor: "Carlos", valor: 56.90},
-  {vendedor: "João", valor: 29.99},
-  {vendedor: "Carlos", valor: 129.60},
-  {vendedor: "João", valor: 54.90},
+  let array = [
+    {vendedor: "Carlos", valor: 129.60},
+    {vendedor: "Carlos", valor: 56.90},
+    {vendedor: "João", valor: 29.99},
+    {vendedor: "Carlos", valor: 129.60},
+    {vendedor: "João", valor: 54.90},
   ]
   
   function totalVendas(array, vendedor) {
-  let venda = 0;
-  for (let i = 0; i <array.length; i++) {
-        
+    let venda = 0;
+    for (let i = 0; i <array.length; i++) {
+      
       if (array[i].vendedor === vendedor) {
         venda+=array[i].valor;
       }
     }
     return venda
+  }
+  
+  const vendedorCarlos = totalVendas(array, "Carlos");
+  console.log(`O vendedor Carlos vendeu R$ ${vendedorCarlos.toFixed(2).replace(".", ",")} esse mês.`);
+  
+  const vendedorJoão = totalVendas(array, "João");
+  console.log(`O vendedor João vendeu R$ ${vendedorJoão.toFixed(2).replace(".", ",")} esse mês.`);
+  
+} 
+
+/*Exercício 47. Crie uma função que transforme um objeto de entrada aplicando uma função
+fornecida a cada uma das propriedades do objeto, retornando um novo objeto com os
+resultados.*/
+if (false) {
+
+  function criarObj(obj, com) {
+    let newObj = {};
+    for (let chave in obj) {
+      newObj[chave] = com(obj[chave]);
+    }
+    return newObj
+  }
+  
+  const object = {sale1: 100, sale2: 52, sale3: 21, sale4: 60};
+  const comission = (x) => x * 1.05;
+  
+  console.log(criarObj(object, comission)); 
 }
-
-const vendedorCarlos = totalVendas(array, "Carlos");
-console.log(`O vendedor Carlos vendeu R$ ${vendedorCarlos.toFixed(2).replace(".", ",")} esse mês.`);
-
-const vendedorJoão = totalVendas(array, "João");
-console.log(`O vendedor João vendeu R$ ${vendedorJoão.toFixed(2).replace(".", ",")} esse mês.`);

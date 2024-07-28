@@ -6,33 +6,38 @@
     <title>JavaScript aplicando CSS (DOM)</title>
 
     <style>
-        .estilo {
+        .estiloPadrao {
+            background-color: white;
+            color: black;
+        }
+
+        .estiloPreto {
             background-color: black;
-            color: white;
-            width: 100px;
-            height: 300px;
-            text-align: center;
+            color: yellow;
+            height: 200px;
         }
 
         .estiloAzul {
             background-color: blue;
             color: white;
-            width: 100px;
-            height: 300px;
-            text-align: center;
         }
 
-        h1 {
-            text-align: center;
-            position: relative;
-            top: 30px;        
+        div {
+            width: 200px; 
+            height: 100px;
+            display: flex; 
+            align-items: center;
+            justify-content: center;
         }
 
     </style>
 
     <script>
-        function trocarEstilizacao() {
-            document.getElementById("quadrado").className = 'estilo'
+        function trocarEstilizacaoPadrao() {
+            document.getElementById("quadrado").className = 'estiloPadrao'
+        }
+        function trocarEstilizacaoPreto() {
+            document.getElementById("quadrado").className = 'estiloPreto'
         }
         function trocarEstilizacaoAzul() {
             document.getElementById("quadrado").className = 'estiloAzul'
@@ -40,10 +45,11 @@
     </script>
 </head>
 <body>
-    <button type="button" onclick="trocarEstilizacao()">Trocar Estilização</button>
-    <button type="button" onclick="trocarEstilizacaoAzul()">Trocar Estilização</button>
+    <button type="button" onclick="trocarEstilizacaoPadrao()">Padrão</button>
+    <button type="button" onclick="trocarEstilizacaoPreto()">Modo Escuro</button>
+    <button type="button" onclick="trocarEstilizacaoAzul()">Modo Gremista</button>
     <hr>
-    <div style="width: 300px; height: 100px;" id="quadrado">
+    <div id="quadrado">
         <h1>Teste</h1>
     </div>
     
