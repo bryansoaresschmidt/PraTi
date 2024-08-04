@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Import CEP</title>
+
+    <script type="module">
+        import { getEnderecoByCEP } from './ExportCEP.mjs'
+
+        getEnderecoByCEP('94015171').then((dado) => { console.log(dado) })
+    </script>
+</head>
+<body>
+    <br>
+GENERATORS: (carrego parte por parte)
+É útil quando tenho app/games que usam muita memória, então em vez de carregar TODO O CÓDIGO de uma só vez, eu carrego uma parte por vez e vou entregando os dados necessários para aquela parte específica.
+Diria que seria parecido como carregar as CHUNKS do Minecraft, não é a mesma coisa mas funciona de forma parecida.
+<br>
+<br>
+PROMISES: (fica carregando em off enquanto outras coisas carregam)
+É util quando tenho uma aplicação com muitos dados, e não posso ficar esperando que o código da linha atual (que é muito grande) carregue, aí eu deixo essa em stand-by enquanto vou carregando outras coisa do meu código para que o app não pare de funcionar enquanto faz o carregamento. No futuro, eu sei que essa resposta poderá ser somente resolve ou reject.
+</body>
+</html>
+
+<!-- 
+TEMA: Estudar mais sobre:
+ 1. PROMISES;
+ 2. PROMISSES ALLSETTLED;
+ 3. PROMISES ANY
+-->

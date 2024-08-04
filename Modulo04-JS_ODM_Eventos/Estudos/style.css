@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "DM Sans";
+}
+
+body {
+    background-color: #121212;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: #fafafa;
+    border-radius: 15px;
+    margin: 15px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.header {
+    background: linear-gradient(70deg, #3acbf0 0%, #4073ff 100%);
+    padding: 20px;
+    text-align: center;
+    color: #fafafa;
+    font-size: 21px;
+}
+
+.form {
+    padding: 20px;
+}
+
+.form-content {
+    margin-bottom: 0px;
+    /* padding-bottom: 20px; */
+    /* position: relative; */
+    
+}
+
+.form-content label {
+    padding-left: 10px;
+    display: inline-block;
+    font-size: 20px;
+    /* margin-bottom: 5px; */
+}
+
+.form-content input {
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px;
+    border: solid 2px #dfdfdf;
+}
+
+/* CLASSES DE CONFIRMAÇÃO/ERRO */
+.form-content a {
+    visibility: hidden;
+}
+
+.form-content.error a {
+    color: #ff3b25;
+    text-align: center;
+    visibility: visible;
+    width: 100%;
+    display: block;
+}
+
+.form-content.error input {
+    border: solid 2px #ff3b25;
+}
+
+/*=============================*/
+.form button {
+    background: linear-gradient(70deg, #3acbf0 0%, #4073ff 100%);
+    color: #fafafa;
+    width: 100%;
+    border-radius: 15px;
+    padding: 10px;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+

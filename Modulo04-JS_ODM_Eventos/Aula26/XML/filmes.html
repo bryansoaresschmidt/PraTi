@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+
+    <title>XML</title>
+    
+    <script src="xmlToJson.js"></script>
+
+    <script>
+        function getMovies() {
+            const xmlHttp = new XMLHttpRequest() 
+            /* Instancia um objeto capaz de fazer requisições pro servidor */
+
+            xmlHttp.open('GET', 'filmes.xml')
+            /* Configurando qual método e qual url vai ser visitada */
+
+            xmlHttp.onreadystatechange = () => { /* Os 4 status forem modificados */
+                if (xmlHttp.readyState === 4 && xmlHttp.status === 200) {
+                    const XMLMovies = xmlHttp.responseText 
+                    /* O objeto retorna em formato de texto XML */
+                    /* Então temos que transformar esse texto pra o código XML... e depois...*/
+                    /* Código XML para o JSON*/
+                    const parser = new DOMParser()
+
+                    const DOMMovies = parser.parseFromString(XMLMovies, 'text/xml')
+                    /* parseFromString é o processo de tradução que transforma o texto XML num doc. que você pode entender. */
+
+                    const JSONMovies = xmlToJson(DOMMovies)
+
+                    // console.log(JSONMovies)
+                    // console.log(xmlToJson(new DOMParser().parseFromString(XMLMovies, 'text/xml')))
+
+                    for (let i in JSONMovies['filmes']['filme']) {
+                        let item = JSONMovies['filmes']['filme'][i]
+
+                        let divRow = document.createElement('div')
+                        divRow.className = 'row'
+                        let divCol = document.createElement('div')
+                        divCol.className = 'col'
+                        let p1 = document.createElement('p')
+                        p1.innerHTML = 
+                        '<br><br><strong>Título: </strong>' + item['titulo']['#text'] + 
+                        '<br><br><strong>Resumo: </strong>' + item['resumo']['#text']
+                        '<br><strong>Gênero: </strong>' + item['genero']['#text']
+                        '<br><strong>Elenco: </strong>' + item['elenco']['ator']['#text']
+
+                        divRow.appendChild(divCol)
+                        divCol.appendChild(p1)
+
+                        document.getElementById('list').appendChild(divRow)
+                    }
+                }
+                if (xmlHttp.readyState === 4 && xmlHttp.status === 404) {
+                    console.log('Deu erro, chama o DEV')
+                }
+            }
+            xmlHttp.send()
+        }
+    </script>
+</head>
+
+
+<body>
+    <nav class="navbar navbar-light bg-light mb-5">
+        <div class="container">
+            <div class="navbar-brand mb-0">
+                <h1>Catálogo de Filmes XML</h1>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container" id="list">
+        <div class="row">
+            <div class="col">
+                <button type="button" class="btn btn-primary" onclick="getMovies()">Listar Filmes</button>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Formulário</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <section class="header">
+        <h2>Nova Conta</h2>
+      </section>
+      <!-- Form -->
+      <form id="form" class="form">
+        <!-- Username -->
+        <div class="form-content">
+            <label for="username">Nome de usuário</label>
+            <input type="text" name="" id="username" placeholder="Digite o nome do usuário...">
+            <a>Nome obrigatório!</a>
+        </div>
+        <!-- Email -->
+        <div class="form-content">
+            <label for="email">Email</label>
+            <input type="email" name="" id="email" placeholder="Digite o email...">
+            <a>Email inválido!</a>
+        </div>
+        <!-- Password -->
+        <div class="form-content">
+            <label for="password">Senha</label>
+            <input type="password" name="" id="password" placeholder="Digite a senha...">
+            <a>Senha não foi inserida ou tem menos de 8 dígitos!</a>
+        </div>
+        <!-- Password Confirmation -->
+        <div class="form-content">
+            <label for="password-confirmation">Confirme a senha</label>
+            <input type="password" name="" id="password-confirmation" placeholder="Digite a senha novamente...">
+            <a>As senhas não são iguais!</a>
+        </div>
+        <!-- Button -->
+        <button type="submit">Cadastrar</button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

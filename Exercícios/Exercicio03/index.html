@@ -1,107 +1,117 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="normalize.css" />
 
     <title>Venda de Casas</title>
+  </head>
 
+  <body>
 
-</head>
-<body id="body">
+    <header>
+      <a href="https://wa.me/message/SKJNNHP5F7YMH1"><button id="whatsapp">Whatsapp</button></a>
+      <div id="yellow"></div>
+    </header>
 
-    <!--PLANEJA SE MUDAR PARA UM APTO OU CASA DE OUTRO NÍVEL?-->
-    <section id="barraNav">
-        <a href="https://wa.me/message/SKJNNHP5F7YMH1"><button id="whatsapp">Whatsapp</button></a>
-        <div id="yellow"></div>
+    <main>
+      <img id="casa" src="./images/CasaDai/1cropped.jpg" alt="Imagem de uma cozinha juntamente com sala de estar."/>
+      <aside>
+        <h1>Planeja se mudar para um <span>apto</span><br />ou<span> casa</span> de outro nível?</h1>
+        <p>Conheça agora os nossos melhores <span>imóveis</span> da região</p>
+        <a href="https://wa.me/message/SKJNNHP5F7YMH1"><button>Suba de Nível Agora Mesmo</button></a>
+        <img id="seta" src="./images/seta.png" alt="Imagem de uma cozinha juntamente com sala de estar."/>
+      </aside>
+    </main>
 
-    </section>
-    <section id="inicio">
-        <img id="imagemEntrada" src="./images/CasaDai/1cropped.jpg" alt="Imagem de uma cozinha juntamente com sala de estar.">
-        <aside>
-            <h1 id="titulo">Planeja se mudar para um <span>apto</span><br>ou <span>casa</span> de outro nível?</h1>
-            <p id="subtitulo">Conheça agora os nossos melhores <span>imóveis</span> da região</p>
-            <a href="https://wa.me/message/SKJNNHP5F7YMH1"><button id="buttonCliqueAqui">Suba de Nível Agora Mesmo</button></a>
-            <img id="seta" src="./images/seta.png" alt="Imagem de uma cozinha juntamente com sala de estar.">
-        </aside>
-    </section>
+    <div>
+      <!--Você quer realizar o sonho da casa própria?-->
+      <img id="sonho" src="./images/sonho.jpg" alt="Você quer realizar o sonho da casa própria? Imagem de uma pessoa segurando uma chave levantada contra o por do Sol com o significado de vitória e grande conquista."/>
+      <h2 id="imoveis">Imóveis selecionados a dedo...</h2>
+    </div>
     
-    <!--Você, quer realizar o sonho da casa própria?-->
-    <section id="image">
-        <img id="imagemSonho" src="./images/sonho.jpg" alt="Imagem de uma pessoa segurando uma chave levantada contra o por do Sol com o significado de vitória e grande conquista.">
-    </section>
+    <!--Casas à venda-->
+    <div class="casas">
+        <section class="info">
+            <h2>Casa em Glorinha à 1km do Centro</h2>
+            <li>Área: 234m²</li>
+            <li>Vagas para carros: 3</li>
+            <li>Quartos: 2</li>
+            <li>Andares: 2</li>
+            <li>Banheiros: 3</li>
+            <li>Preço: R$ 450k</li>
+        </section>
+        <section class="borda-verde">
+            <div id="img">
+                <img onclick="mostrarImagem(this)" class="principal" src="./images/CasaDai/1cropped.jpg" alt="Imagem de uma cozinha juntamente com sala de estar."/>
+            </div>
+            <button class="verMaisFotos" onclick="mostrarImagemBtn('./images/CasaDai/1cropped.jpg')">Ver mais fotos...</button>
+        </section>
+    </div>
     
-    
-    <!--Imóveis selecionados a dedo:-->
-    <h1 id="imoveis">Imóveis selecionados a dedo...</h1>
-    <section class="casas">
-        <div class="casaGlorinha">
-            <h1 class="h">Casa em Glorinha à 1km do Centro</h1>
-                <li>Área: 234m²</li>
-                <li>Vagas para carros: 3</li>
-                <li>Quartos: 2</li>
-                <li>Andares: 2</li>
-                <li>Banheiros: 3</li>
-                <li>Preço: R$ 450k</li>
-        </div>
-        <aside>
-            <a href=""><img class="imagemEntrada2" src="./images/CasaDai/1cropped.jpg" alt="Imagem de uma cozinha juntamente com sala de estar."></a>
-            <a href=""><button class="botaoVerMaisFotos">Ver mais fotos...</button></a>
-        </aside>
+    <div class="casas">
+        <section class="info">
+            <h2>Cobertura no Centro de Gravataí</h2>
+            <li>Área: 256m²</li>
+            <li>Vagas para carros: 1</li>
+            <li>Quartos: 3</li>
+            <li>Andares: 2</li>
+            <li>Banheiros: 3</li>
+            <li>Preço: R$ 590k</li>
+        </section>
+        <section class="borda-verde">
+            <div id="img">
+                <img onclick="mostrarImagem(this)" class="principal" src="./images/AptoEdAçorianos/1.jpg" alt="Imagem de uma cozinha juntamente com sala de estar."/>
+            </div>
+                <button class="verMaisFotos" onclick="mostrarImagemBtn('./images/AptoEdAçorianos/1.jpg')">Ver mais fotos...</button>
+        </section>
+    </div>
+
+    <section id="container-fechar" class="container container-fechar">
+        <button class="fechar" onclick="fecharImagens()"> &times; </button>
+        <button class="set-dir set"> &lArr; </button>
+        <button class="set-esq set"> &rArr; </button>
+        <img src="" alt="" id="imagemGrande">
     </section>
 
-    <section class="casas">
-        <div class="casaGlorinha">
-            <h1 class="h">Cobertura no Centro de Gravataí</h1>
-                <li>Área: 256m²</li>
-                <li>Vagas para carros: 1</li>
-                <li>Quartos: 3</li>
-                <li>Andares: 2</li>
-                <li>Banheiros: 3</li>
-                <li>Preço: R$ 590k</li>
+    <!--Formulário-->
+    <div id="div">
+        <div class="form">
+            <section id="titulo">
+                <h3>Quer tirar mais dúvidas?</h3>
+            </section>
+                
+            <section id="sub-titulo">
+                    <p>Preencha para entrar na fila de espera...</p>
+            </section>
+                
+            <form id="form" action="" method="">
+                <fieldset>
+                    <label for="nome">Nome:</label>
+                    <input placeholder="Qual é seu nome?" type="text" name="nome" tabindex="1" required/>
+                    <br><br>
+                    <label for="celular">Celular:</label>
+                    <input placeholder="Telefone..." type="tel" name="celular" tabindex="2" required/>
+                </fieldset>
+                    
+                <fieldset>
+                        <label for="duvida">Dúvidas:</label>
+                        <input placeholder="Descreva sua dúvida aqui..." type="text" name="duvida" id="duvida" tabindex="3"/>
+                </fieldset>
+                    
+                <fieldset id="submit">
+                    <button type="submit" name="enviar" id="enviar" tabindex="4">enviar</button>
+                </fieldset>
+            </form>
         </div>
-        <aside>
-            <a href=""><img class="imagemEntrada2" src="./images/AptoEdAçorianos/1.jpg" alt="Imagem de uma cozinha juntamente com sala de estar."></a>
-            <a href=""><button class="botaoVerMaisFotos">Ver mais fotos...</button></a>
-        </aside>
-    </section>
-
-    <section class="containerM">
-        <div id="tituloForm">
-            <h1>Quer tirar mais dúvidas?</h1>
-        </div>
-        <div id="subTituloForm">
-            <p>Preencha para entrar na fila de espera...</p>
-        </div>
-        <form id="form" action="" method="post">
-            <fieldset>
-                <label for="nome">Nome:</label>
-                <input placeholder="Bryan Schmidt" type="text" name="nome" tabindex="1" required>
-            </fieldset>
-            <fieldset>
-                <label for="celular">Celular:</label>
-                <input placeholder="(51) 99528-0301" type="tel"  name="celular" tabindex="2" required>
-            </fieldset>
-            <fieldset>
-                <label for="duvida">Dúvidas:</label>
-                <input placeholder="Descreva sua dúvida aqui..." type="text" name="duvida" id="duvida" tabindex="3">
-            </fieldset>
-            <fieldset>
-                <input type="submit" name="enviar" id="enviar" tabindex="4">
-            </fieldset>
-        </form>
-    </section>
-    <section>
-        <hr>
-        <footer id="rodape">
-            <a href="https://www.instagram.com/_bryanschmidt_/"><button id="linkInstagram">Desenvolvido por @_bryanschmidt_<img id="logoInstagram" src="./images/instagram1.png"></button></a>
-            
+    </div>
+        
+        <footer>
+            <a href="https://www.instagram.com/_bryanschmidt_/"><button id="linkInstagram">Desenvolvido por @_bryanschmidt_<img id="logoInstagram" src="./images/instagram1.png"/></button></a>
         </footer>
-
-    </section>
-    
-</body>
-</html>
+    <script src="script.js"></script>        
+    </body>
+    </html>
