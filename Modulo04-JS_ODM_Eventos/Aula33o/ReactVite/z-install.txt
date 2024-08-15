@@ -1,0 +1,19 @@
+git init -y
+
+npm create vite@latest
+
+y
+
+Vitti-project
+
+ENTER
+
+React
+
+JavaScript
+
+cd Vitti-project
+
+npm install
+
+npm run dev

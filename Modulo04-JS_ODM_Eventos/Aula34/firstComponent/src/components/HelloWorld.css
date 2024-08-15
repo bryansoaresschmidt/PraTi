@@ -1,0 +1,49 @@
+/* CSS geral */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+/* Barra de Navegação */
+.navbar {
+    position: fixed;
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+img.spotify-logo-nav {
+    width: 150px; /* Valor padrão para telas maiores */
+}
+
+/* Media Queries */
+@media (max-width: 850px) {
+    img.spotify-logo-nav {
+        width: 100px;
+    }
+}
+
+nav.links {
+    gap: 2vw;
+}
+
+.links {
+    display: flex;
+}
+
+.links a {
+    text-decoration: none;
+    color: white;
+    font-size: clamp(0.5rem, 2vw, 1rem);
+}

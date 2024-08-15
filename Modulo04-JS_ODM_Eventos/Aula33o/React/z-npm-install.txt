@@ -1,0 +1,23 @@
+npm init -y (-y dizer yes para tudo)
+
+npm install @babel/core babel-loader @babel/cli @babel/preset-env @babel/preset-react
+
+@babel/core         -> É o necessário para usar babel, Núcleo base do babel
+babel-loader        -> Pra usar com algumas outras coisas, como webpack por exemplo
+@babel/cli          -> Pra facilitar o uso do babel em linhas de comando
+@babel/preset-env   -> São pacotes de traduções que vão ser traduzidas do JS
+@babel/preset-react -> São coleções pré prontas do react
+
+webpack webpack-dev-server
+
+react react-dom
+
+Coloca isso dentro do scripts no arquivo package.json
+    "start": "webpack-dev-server", // Configura o que a gente vai usar
+    "build": "webpack",
+
+npm start
+
+yes
+
+npm install html-webpack-plugin
