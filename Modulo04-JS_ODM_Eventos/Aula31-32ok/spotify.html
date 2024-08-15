@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Pirata</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="spotify.css">
+    <script src="spotify.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="navbar position-fixed start-0 top-0 navbar w-100 py-sm-2 py-md-3 py-lg-4 d-flex justify-content-around align-items-center">
+            <img class="spotify-logo-nav" src="./img/spotify.svg" alt="">
+            <nav class="links d-flex">
+                <a href="#">Premium</a>
+                <a href="#">Ajuda</a>
+                <a href="#">Baixar</a>
+                <a href>|</a>
+                <a href="#">Inscreva-se</a>
+                <a href="#">Entrar</a>
+            </nav>
+        </div>
+    </header>
+        
+    <main>
+        <section class="slider background d-flex align-items-center">
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <div class="slides-container">
+
+                <div class="slide">
+                    <h1>As melhores Playlists</h1>
+                    <div class="d-flex justify-content-center">
+                        <button class="button">Ouça Agora &#9835</button>
+                    </div>
+                </div>
+                
+                <div class="slide">
+                    <h1>Música para todos!</h1>
+                    <div class="d-flex justify-content-center">
+                        <button class="button free">Aproveite o Spotify Free</button>
+                        <button class="button premium">Obter Spotify Premium</button>
+                    </div>
+                </div>
+            </div>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </section>
+                
+        <!--O que o Spotify tem? -->
+        <section class="spotify-tem">
+            <div class="fotos">
+                <img src="./img/cara-esquisito.jpg" alt="">
+                <img src="./img/garota.jpg" alt="">
+                <img src="./img/zara-larsson.jpg" alt="">
+                <img src="./img/trap.jpg" alt="">
+            </div>
+            <div>
+                <h2>O que o Spotify tem?</h2>
+                <h3>Músicas</h3>
+                <p>Escute os seus sons favoritos aonde e a hora que quiser ouvir.<br>Descubra milhões de novas músicas e reúna seus favoritos em um só lugar!</p><hr>
+                <h3>Playlists</h3>
+                <p>Não sabe o que escutar? Temos playlist prontas separadas pro seu estilo específico preferido.</p><hr>
+                <h3>Lançamentos</h3>
+                <p>Quer estar sempre atualizado? Com nosso app você estará sempre atualizado com os mais novos HITS da estação.</p>
+            </div>
+        </section>
+                            
+        <section class="background celulares">
+            <div class="w-100 color text-light d-flex justify-content-around align-items-center">
+                <div class="texto p-5">
+                    <h1>Fácil...</h1>
+                    <h2 class="title">Buscar</h2>
+                    <p>Já sabe o que quer procurar? É só apertar e meter o play!</p>
+                    <h2 class="title">Navegar</h2>
+                    <p>Veja os novos lançamentos antes de todos. Descubra o que está bombando antes mesmo de lançar!</p>
+                    <h2 class="title">Descobrir</h2>
+                    <p>Conte com músicas novas todas segundas-feiras que são do seu gosto. Playlist especial pra você!</p>
+                </div>
+                <div class="iphones p-4">
+                    <img src="./img/iphone1.png" alt="">
+                    <img id="iphone" src="./img/iphone2.png" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-black h-25 d-flex align-items-center justify-content-around">
+        <div class="w-100 d-flex justify-content-around">
+            <img src="./img/spotify.svg" alt="">
+            <div class="d-flex flex-column justify-content-start">
+                <h5>Empresa</h5>
+                <a href="">Sobre</a>
+                <a href="">Empregos</a>
+                <a href="">Imprensa</a>
+                <a href="">Novidades</a>
+            </div>
+            <div class="d-flex flex-column">
+                <h5>Comunidade</h5>
+                <a href="">Artistas</a>
+                <a href="">Desenvolvedores</a>
+                <a href="">Marcas</a>
+            </div>
+            <div class="d-flex flex-column">
+                <h5>Links Úteis</h5>
+                <a href="">Ajuda</a>
+                <a href="">Presentes</a>
+                <a href="">Player da Web</a>
+            </div>
+                        
+            <div class="logos">
+                <img src="./img/logo-insta.png" alt="">
+                <img class="fc" src="./img/logo-face.png" alt="">
+                <img class="tt" src="./img/logo-tt.png" alt="">
+            </div>
+        </div>
+        
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

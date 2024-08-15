@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: #242424;
+    font-family: sans-serif;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 900;
+    color:#000;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+main {
+    display: block;
+    background-color: #fffde7;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+section.module p {
+    margin-bottom: 40px;
+}
+
+section.module.last-child {
+    margin-bottom: 0;
+}
+
+section.module h2 {
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+section.module.content {
+    padding: 40px 0;
+    background: #ece7d5;
+}
+
+section.module.parallax {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+}
+
+section.module.parallax {
+    background-image: url('./background-apagado.jpg');
+}
