@@ -1,0 +1,21 @@
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+
+    position: relative;
+    top: 100vh;
+    height: 6vh;
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(0, 0, 0, 0.5);
+    color: rgb(255, 255, 255);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}

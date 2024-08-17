@@ -1,7 +1,7 @@
-import './HelloWorld.css';
+import './Header.css';
 import spotifyLogo from './img/spotify.svg';
 
-function HelloWorld() {
+function Header() {
     return (
         <header>
             <div className="navbar">
@@ -19,4 +19,4 @@ function HelloWorld() {
     )
 }
 
-export default HelloWorld
+export default Header
