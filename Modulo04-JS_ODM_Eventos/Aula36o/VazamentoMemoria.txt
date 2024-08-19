@@ -1,0 +1,21 @@
+Claro! Vamos explicar o conceito de "evitar vazamento de memória" de uma forma simples.
+
+O que é um Vazamento de Memória?
+Imagine que seu computador é como uma grande sala de aula e a memória do computador é como uma lousa onde você pode escrever informações temporárias. Quando você usa um programa, é como se você estivesse escrevendo algo na lousa. Quando você termina de usar o programa, você deveria apagar o que escreveu para liberar espaço na lousa para novas informações.
+
+Agora, se você esquecer de apagar algumas coisas da lousa quando terminar, essas informações antigas ainda estarão lá, ocupando espaço que poderia ser usado para novas informações. Isso é como um vazamento de memória. O espaço da lousa (memória) está sendo ocupado por coisas que não são mais necessárias, e isso pode causar problemas para o computador.
+
+Como Evitar Vazamento de Memória em Programas
+Quando você escreve um programa, às vezes precisa usar recursos do computador, como temporizadores ou conexões com servidores. Se você não "limpar" esses recursos quando não precisar mais deles, eles continuam ocupando memória e podem fazer com que o computador fique mais lento ou até pare de funcionar bem.
+
+Por exemplo:
+
+Temporizadores: Se você cria um temporizador (como um cronômetro) e não para ele quando termina de usar, ele continuará funcionando em segundo plano e ocupando memória.
+Conexões com Servidores: Se você se conecta a um servidor para receber dados e não fecha essa conexão quando termina, o computador continua reservando memória para isso.
+No Seu Código
+No seu código React, você está usando um temporizador (setInterval). Se não pararmos esse temporizador quando o componente não estiver mais na tela (ou seja, quando o "quadro" não é mais necessário), ele continuará funcionando e ocupando memória. Isso é um vazamento de memória.
+
+Para evitar isso, você usa uma função de limpeza no useEffect. Quando o componente é desmontado (ou seja, quando você não precisa mais dele), a função de limpeza é chamada e o temporizador é parado, liberando a memória que estava sendo usada.
+
+Resumindo
+Evitar vazamento de memória é como garantir que você sempre limpe a lousa quando terminar de usar, para que o espaço esteja livre para novas informações. Isso ajuda a manter o computador funcionando bem e evita problemas de lentidão ou falhas.
