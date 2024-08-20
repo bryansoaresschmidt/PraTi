@@ -7,7 +7,7 @@ function TimerComponent() {
     useEffect(() => {
         const timerId = setInterval(() => {     // Quando o componente for montado...
             setCounter(prevCounter => prevCounter - 1) // prevCounter é o counter
-        }, 500)
+        }, 1000)
 
             return () => {                          
                 clearInterval(timerId)              // Quando o componente for desmontado...

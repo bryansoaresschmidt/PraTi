@@ -16,7 +16,7 @@ function Posts() {
   useEffect(() => {
     fetchPosts();
     const intervalId = setInterval(fetchPosts, 1000);
-    return () => clearInterval(intervalId);
+    return () => clearInterval(intervalId); // Se a função de limpeza nunca fosse chamada, o temporizador nunca seria cancelado. Isso significa que a função fetchPosts continuaria sendo executada a cada segundo, indefinidamente.
   }, []);
 
   return (
