@@ -1,0 +1,21 @@
+Objetivo:
+Desenvolver um formulário de registro de usuário que colete informações básicas como NOME, EMAIL, SENHA e CONFIRMAÇÃO DE SENHA. O formulário deve validar os dados inseridos e exibir mensagens de erro apropriadas quando os dados não forem válidos.
+
+Requisitos do Desafio:
+
+Estrutura do formulário:
+Campo para nome completo (obrigatório)
+Campo para email (obrigatório e deve ser um email válido)
+Campo para senha (obrigatório e deve ter no mínimo 8 caracteres)
+Campo para confirmar senha (obrigatório e deve ser igual ao campo senha)
+Botão de submit
+
+Validações:
+Todos os campos são obrigatórios.
+O email dever um formato válido (exemplo: usuario@dominio.com.br).
+A senha deve ter no mínimo 8 caracteres.
+A confirmação da senha dever ser idêntica a senha.
+
+Comportamento do formulário:
+Exibir mensagens de erro abaixo dos campos que não passam nas validações.
+Exibir uma mensagem de sucesso ao final do formulário quando todos os dados forem válidos e o formulário submetido.
