@@ -1,7 +1,7 @@
-import './App.css'
 import Form from './components/Form'
 import AddressForm from './components/AddressForm'
 import FormAdvanced from './components/FormAdvanced'
+import RegistrationForm from './components/RegistrationForm'
 
 function App() {
 
@@ -10,6 +10,7 @@ function App() {
       <Form />
       <AddressForm />
       <FormAdvanced />
+      <RegistrationForm />
     </>
   )
 }
