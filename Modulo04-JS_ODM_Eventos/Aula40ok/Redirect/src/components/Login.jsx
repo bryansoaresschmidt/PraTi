@@ -1,10 +1,11 @@
-function Login() {
-    return (
-        <div>
-            <form action="">Faça seu login:
-                <input type="text" placeholder="Nome"/>
-                <input type="password" placeholder="Senha"/>
-            </form>
-        </div>
-    )
+
+function Home() {
+  return (
+    <div>
+      <h1>Bem-vindo ao seu perfil</h1>
+    </div>
+  );
 }
+
+export default Home;
+

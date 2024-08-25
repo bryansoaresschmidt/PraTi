@@ -70,20 +70,16 @@ const Input = styled.input`
 `;
 
 const Button = styled.button`
-  width: 100%;
-  height: 45px;
-  padding: 5px;
-  margin: 5px 0;
+  padding: 15px;
+  border: none;
   border-radius: 5px;
-  border: 1px solid #c5c072;
-  background-color: #fff;
-  font-size: 14px;
-  color: #fff;
-  outline: none;
   background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  width: 100%;
 
-  &:focus {
-    border-color: #666;
+  &:hover {
+    background-color: #0056b3;
   }
 `;
 

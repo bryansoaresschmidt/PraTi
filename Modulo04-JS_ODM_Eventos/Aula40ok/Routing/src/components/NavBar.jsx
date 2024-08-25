@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import styles from './index.module.css'
 
 
-export function Navigation() {
+export function NavBar() {
     return (
         <nav className={styles.navbar}>
             <ul className={styles.ul}>

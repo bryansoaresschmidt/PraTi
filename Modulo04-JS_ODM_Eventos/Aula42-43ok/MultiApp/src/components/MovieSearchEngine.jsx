@@ -20,7 +20,7 @@ const Input = styled.input`
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  width: 20%;
+  width: 30%;
 `;
 
 const Button = styled.button`
@@ -30,7 +30,7 @@ const Button = styled.button`
   background-color: #007bff;
   color: white;
   cursor: pointer;
-  width: 20%;
+  width: 30%;
 
   &:hover {
     background-color: #0056b3;
@@ -66,9 +66,7 @@ const MovieSearchEngine = () => {
 
   const searchMovies = async () => {
     try {
-      const response = await axios.get(
-        `http://www.omdbapi.com/?s=${query}&apikey=403abbfe`
-      ); // API KEY para que tenhamos acesso
+      const response = await axios.get(`http://www.omdbapi.com/?s=${query}&apikey=403abbfe`); // API KEY para que tenhamos acesso
       setMovies(response.data.Search);
     } catch (error) {
       console.error("Estamos com o erro:", error);
