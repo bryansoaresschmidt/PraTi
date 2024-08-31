@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f82f173e-1f38-4f1b-b762-2c77710f8f47" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Exercícios/Exercicios01.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Exercícios/Exercicios02.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Exercícios/Exercício05/multi-app/.eslintrc.cjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Exercícios/Exercício05/multi-app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Exercícios/Exercício05/multi-app/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Exercícios/Exercício05/multi-app/db.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Exercícios/Exercício05/multi-app/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Exercícios/Exercício05/multi-app/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Exercícios/Exercício05/multi-app/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Exercícios/Exercício05/multi-app/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Exercícios/Exercício05/multi-app/src/App.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Exercícios/Exercício05/multi-app/src/components/IPAddressFinder.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Exercícios/Exercício05/multi-app/src/components/LanguageTranslator.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Exercícios/Exercício05/multi-app/src/components/Login.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Exercícios/Exercício05/multi-app/src/components/MovieSearchEngine.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Exercícios/Exercício05/multi-app/src/components/MyNavBar.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Exercícios/Exercício05/multi-app/src/components/QRCodeGenarator.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Exercícios/Exercício05/multi-app/src/components/QuizApp.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Exercícios/Exercício05/multi-app/src/components/TodoApp.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Exercícios/Exercício05/multi-app/src/context/AuthenticatedContext.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Exercícios/Exercício05/multi-app/src/main.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Exercícios/Exercício05/multi-app/vite.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Exercícios/Lista de Tarefas 2.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula14ok/Aula14.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula14ok/homemDeFerro.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula14ok/landingpage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula15ok/Aula15.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula15ok/Boostrap/bootstrap.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula15ok/Boostrap/css/boostrap-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula15ok/Boostrap/css/boostrap-theme.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula15ok/Boostrap/css/boostrap-theme.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula15ok/Boostrap/css/boostrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula15ok/Boostrap/css/boostrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula15ok/Boostrap/css/boostrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula15ok/Boostrap/css/estilo.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula15ok/Boostrap/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula15ok/Boostrap/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula15ok/dolphin.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula15ok/praia.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula16ok/Aula16.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula16ok/estilo.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula16ok/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula16ok/images/FunilariaSulcalhasulLogo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula16ok/projetos.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula16ok/servicos.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula17ok/Aula17_1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula17ok/Aula17_2-Float.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula17ok/Aula17_3-InlineBlock.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula17ok/Aula17_4-StaticRelativeAbsoluteFixed.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula17ok/Aula17_5-Z-index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula17ok/Aula17_6-Paralax.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula17ok/Wallpaper/126219.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula17ok/Wallpaper/21627.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula17ok/Wallpaper/24932.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula17ok/Wallpaper/267493.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula17ok/Wallpaper/267577.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula17ok/Wallpaper/27727.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula17ok/Wallpaper/314900.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula17ok/Wallpaper/409984.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula17ok/Wallpaper/410023.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula17ok/Wallpaper/487108.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula17ok/Wallpaper/487135.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula17ok/Wallpaper/487202.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula17ok/Wallpaper/487276.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula17ok/Wallpaper/487279.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula17ok/Wallpaper/5043.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula17ok/Wallpaper/7862.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula17ok/Wallpaper/82058.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula17ok/Wallpaper/8648.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula17ok/Wallpaper/8651.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula17ok/Wallpaper/96964.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula17ok/Wallpaper/groot dançante.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula17ok/Wallpaper/homiranha.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula17ok/Wallpaper/horizon.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula17ok/Wallpaper/miranha.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula17ok/Wallpaper/ps4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula17ok/Wallpaper/terra colorida.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula17ok/aa.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula17ok/boxmodel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula17ok/images/dolphin.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula17ok/images/image1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula17ok/images/image2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula17ok/images/image3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula17ok/images/image4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula17ok/images/image5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula17ok/images/praia.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula18ok/Aula18-01-heranca.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula18ok/Aula18-01-heranca.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula18ok/Aula18-02-seletores.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula18ok/Aula18-02-seletores.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula18ok/Aula18-03-especificidade.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula18ok/Aula18-03-especificidade.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula18ok/Aula18-04-menu-vertical/ajuda-rs.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula18ok/Aula18-04-menu-vertical/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula18ok/Aula18-04-menu-vertical/normalize.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula18ok/Aula18-04-menu-vertical/perfil.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula18ok/Aula18-04-menu-vertical/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula18ok/Aula18-04-menu-vertical/trilhas.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula18ok/Aula18-05-menu-horizontal/images/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula18ok/Aula18-05-menu-horizontal/images/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula18ok/Aula18-05-menu-horizontal/images/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula18ok/Aula18-05-menu-horizontal/images/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula18ok/Aula18-05-menu-horizontal/images/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula18ok/Aula18-05-menu-horizontal/images/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula18ok/Aula18-05-menu-horizontal/images/Bryan Schmidt (1).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula18ok/Aula18-05-menu-horizontal/images/CNH.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula18ok/Aula18-05-menu-horizontal/images/CNH2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula18ok/Aula18-05-menu-horizontal/images/CNH3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula18ok/Aula18-05-menu-horizontal/images/Colaboradores/Design sem nome (1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula18ok/Aula18-05-menu-horizontal/images/Colaboradores/Design sem nome (2).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula18ok/Aula18-05-menu-horizontal/images/Colaboradores/Eu (8).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula18ok/Aula18-05-menu-horizontal/images/Monochrome Modern Technology Black Logo_page-0001.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula18ok/Aula18-05-menu-horizontal/images/Monochrome Modern Technology Black Logo_page-0002.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula18ok/Aula18-05-menu-horizontal/images/Monochrome Modern Technology Black Logo_page-0004.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula18ok/Aula18-05-menu-horizontal/images/Posts/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula18ok/Aula18-05-menu-horizontal/images/Posts/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula18ok/Aula18-05-menu-horizontal/images/Posts/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula18ok/Aula18-05-menu-horizontal/images/Posts/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula18ok/Aula18-05-menu-horizontal/images/Posts/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula18ok/Aula18-05-menu-horizontal/images/Promove Aí.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula18ok/Aula18-05-menu-horizontal/images/cALHAS - COIFAS - ALGEROSAS - TELHADO (1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula18ok/Aula18-05-menu-horizontal/images/download.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula18ok/Aula18-05-menu-horizontal/images/gerenciamento-de-redes-sociais.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula18ok/Aula18-05-menu-horizontal/images/google.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula18ok/Aula18-05-menu-horizontal/images/interroação.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula18ok/Aula18-05-menu-horizontal/images/itnerre.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula18ok/Aula18-05-menu-horizontal/images/molde.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula18ok/Aula18-05-menu-horizontal/images/tik tok.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula18ok/Aula18-05-menu-horizontal/images/video.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula18ok/Aula18-05-menu-horizontal/images/whatsapp.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula18ok/Aula18-05-menu-horizontal/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula18ok/Aula18-05-menu-horizontal/normalize.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula18ok/Aula18-05-menu-horizontal/servicos.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula18ok/Aula18-05-menu-horizontal/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula18ok/Aula18-05-menu-horizontal/time.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula18ok/Aula18-05-menu-horizontal/trabalhos.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula18ok/images/menu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula18ok/images/seta.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula18ok/images/seta2.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula18ok/seletores-esquema.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula19ok/Aula19-Tag-Semantica.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula19ok/css/Aula19-Normalise.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula19ok/css/Aula19-Tag-Semantica.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula19ok/img/depoimento.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula19ok/img/fundo-foto.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula19ok/img/fundo-rodape.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula19ok/img/fundo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula19ok/img/imagem1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula19ok/img/imagem2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula19ok/img/imagem3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula19ok/img/imagem4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula19ok/img/imagem5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula19ok/img/imagem6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula19ok/img/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo03-FrontEnd/Aula19ok/img/museu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula20ok/Aula20-01-ImportandoJS.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula20ok/Aula20-01-ImportandoJS.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula20ok/Aula20-02-InserindoJS.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula20ok/Aula20-03-Eventos.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula20ok/Aula20-04-Calculadora-Normalize.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula20ok/Aula20-04-Calculadora.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula20ok/Aula20-04-Calculadora.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula20ok/Aula20-04-Calculadora.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula21ok/Aula21-01-JavaScript-aplicando-CSS.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula21ok/Aula21-02-JavaScript-aplicando-CSS.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula21ok/Aula21-03-Abrir-Fechar-Imprimir-Janela.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula21ok/Aula21-04-Avail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula21ok/Aula21-05-setTimeout-setInterval.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula21ok/Aula21-06-TryCatch.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula21ok/Aula21-07-Destruturação.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula22-23/LocalStorage/Learning-localStorage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula22-23/LocalStorage/Learning-localStorage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula22-23/LocalStorage/Practicing-localStorage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula22-23/LocalStorage/Practicing-localStorage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula22-23/Site do Professor/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula22-23/Site do Professor/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula22-23/Site do Professor/listTask.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula22-23/app-again.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula22-23/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula22-23/cadastros.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula22-23/form.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula22-23/img/editar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula22-23/img/lixeira.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula22-23/img/lupa.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula22-23/img/mais.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula22-23/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula22-23/json_e_javascript-object.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula22-23/normalize.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula22-23/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula24ok/Animation.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula24ok/Animation.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula24ok/BorderRadius-BoxSizing.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula24ok/BorderRadius-BoxSizing.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula24ok/Degrade.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula24ok/Degrade.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula24ok/FlexBox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula24ok/FlexBox.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula24ok/Shadows.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula24ok/Shadows.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula24ok/Wallpaper/126219.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula24ok/Wallpaper/21627.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula24ok/Wallpaper/24932.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula24ok/Wallpaper/267493.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula24ok/Wallpaper/267577.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula24ok/Wallpaper/27727.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula24ok/Wallpaper/314900.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula24ok/Wallpaper/409984.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula24ok/Wallpaper/410023.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula24ok/Wallpaper/487108.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula24ok/Wallpaper/487135.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula24ok/Wallpaper/487202.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula24ok/Wallpaper/487276.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula24ok/Wallpaper/487279.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula24ok/Wallpaper/5043.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula24ok/Wallpaper/82058.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula24ok/Wallpaper/8651.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula24ok/Wallpaper/96964.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula24ok/Wallpaper/charyzard.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula24ok/Wallpaper/dragao.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula24ok/Wallpaper/groot dançante.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula24ok/Wallpaper/homiranha.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula24ok/Wallpaper/horizon.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula24ok/Wallpaper/miranha.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula24ok/Wallpaper/ps4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula24ok/Wallpaper/terra-colorida.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula25ok/.vscode/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula25ok/Ajax-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula25ok/Ajax-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula25ok/Ajax-3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula25ok/Ajax-page1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula25ok/Ajax-page2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula25ok/Ajax-page3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula25ok/Grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula25ok/Grid.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula25ok/Media-Queries.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula25ok/Media-Queries.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula25ok/Media-Query.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula25ok/Media-Query.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula25ok/Requisicoes-Assincronas.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula25ok/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula27ok/Generator/Generators.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula27ok/Generator/Generators2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula27ok/Generator/Generators3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula27ok/Generator/Piadas.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula27ok/Generator/Piadas.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula27ok/Generator/Piadas.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula27ok/Generator/piadas.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula27ok/Promises/.vscode/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula27ok/Promises/ExportCEP.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula27ok/Promises/ImportCEP.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula27ok/Promises/Promises.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula30ok/.vscode/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula30ok/Navegacao-entre-abas.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula30ok/Navegacao-por-abas.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula30ok/Navegacao-por-abas.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula30ok/bulbasaur.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula30ok/charmander.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula30ok/img/8Xsq-unscreen.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula30ok/img/aba.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula30ok/img/aok.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula30ok/img/aside.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula30ok/img/aside.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula30ok/img/bulbasaur.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula30ok/img/charmander.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula30ok/img/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula30ok/img/oak.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula30ok/img/oak2.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula30ok/img/oka.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula30ok/img/pokebola.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula30ok/img/squirtle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula30ok/squirtle.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula31-32ok/img/Design sem nome (2).zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula31-32ok/img/Imagem do WhatsApp de 2024-08-14 à(s) 18.39.18_78fc2feb.png.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula31-32ok/img/background-apagado.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula31-32ok/img/background.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula31-32ok/img/cara-esquisito.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula31-32ok/img/garota.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula31-32ok/img/iphone1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula31-32ok/img/iphone2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula31-32ok/img/logo-face.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula31-32ok/img/logo-insta.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula31-32ok/img/logo-tt.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula31-32ok/img/spotify.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula31-32ok/img/trap.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula31-32ok/img/zara-larsson.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula31-32ok/spotify.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula31-32ok/spotify.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula31-32ok/spotify.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula35ok/stateHooks/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula35ok/stateHooks/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula35ok/stateHooks/eslint.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula35ok/stateHooks/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula35ok/stateHooks/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula35ok/stateHooks/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula35ok/stateHooks/public/vite.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula35ok/stateHooks/src/App.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula35ok/stateHooks/src/components/Counter.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula35ok/stateHooks/src/components/Mirror.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula35ok/stateHooks/src/components/ToDoList.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula35ok/stateHooks/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula35ok/stateHooks/src/main.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula35ok/stateHooks/vite.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula37ok/LifeCycle/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula37ok/LifeCycle/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula37ok/LifeCycle/eslint.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula37ok/LifeCycle/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula37ok/LifeCycle/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula37ok/LifeCycle/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula37ok/LifeCycle/public/vite.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula37ok/LifeCycle/src/App.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula37ok/LifeCycle/src/App.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula37ok/LifeCycle/src/components/LifeCycle.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula37ok/LifeCycle/src/components/Posts.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula37ok/LifeCycle/src/components/User.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula37ok/LifeCycle/src/components/all.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula37ok/LifeCycle/src/main.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula37ok/LifeCycle/vite.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula39ok/Desafio/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula39ok/Desafio/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula39ok/Desafio/eslint.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula39ok/Desafio/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula39ok/Desafio/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula39ok/Desafio/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula39ok/Desafio/public/vite.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula39ok/Desafio/src/App.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula39ok/Desafio/src/components/Contexto.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula39ok/Desafio/src/components/Filho.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula39ok/Desafio/src/main.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula39ok/Desafio/vite.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula39ok/useContext/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula39ok/useContext/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula39ok/useContext/eslint.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula39ok/useContext/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula39ok/useContext/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula39ok/useContext/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula39ok/useContext/public/vite.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula39ok/useContext/src/App.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula39ok/useContext/src/components/Contexto.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula39ok/useContext/src/components/Filho.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula39ok/useContext/src/main.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula39ok/useContext/vite.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula40ok/Redirect/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula40ok/Redirect/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula40ok/Redirect/eslint.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula40ok/Redirect/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula40ok/Redirect/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula40ok/Redirect/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula40ok/Redirect/public/vite.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula40ok/Redirect/src/App.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula40ok/Redirect/src/components/Home.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula40ok/Redirect/src/components/Login.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula40ok/Redirect/src/components/ProtectedRoute.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula40ok/Redirect/src/main.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula40ok/Redirect/vite.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula40ok/Routing/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula40ok/Routing/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula40ok/Routing/eslint.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula40ok/Routing/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula40ok/Routing/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula40ok/Routing/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula40ok/Routing/public/vite.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula40ok/Routing/src/App.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula40ok/Routing/src/components/Home.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula40ok/Routing/src/components/NavBar.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula40ok/Routing/src/components/Servicos.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula40ok/Routing/src/components/Sobre.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula40ok/Routing/src/components/index.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula40ok/Routing/src/main.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula40ok/Routing/vite.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula41ok/HttpRequest/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula41ok/HttpRequest/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula41ok/HttpRequest/eslint.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula41ok/HttpRequest/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula41ok/HttpRequest/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula41ok/HttpRequest/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula41ok/HttpRequest/public/vite.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula41ok/HttpRequest/src/App.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula41ok/HttpRequest/src/components/Delete.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula41ok/HttpRequest/src/components/Get.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula41ok/HttpRequest/src/components/Post.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula41ok/HttpRequest/src/components/Put.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula41ok/HttpRequest/src/main.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula41ok/HttpRequest/vite.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula42-43ok/MultiApp/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula42-43ok/MultiApp/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula42-43ok/MultiApp/eslint.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula42-43ok/MultiApp/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula42-43ok/MultiApp/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula42-43ok/MultiApp/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula42-43ok/MultiApp/public/vite.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula42-43ok/MultiApp/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula42-43ok/MultiApp/src/App.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula42-43ok/MultiApp/src/components/IPAddressFinder.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula42-43ok/MultiApp/src/components/LanguageTranslator.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula42-43ok/MultiApp/src/components/Login.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula42-43ok/MultiApp/src/components/MovieSearchEngine.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula42-43ok/MultiApp/src/components/QRCodeGenerator.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula42-43ok/MultiApp/src/components/QuizApp.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula42-43ok/MultiApp/src/components/TodoApp.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula42-43ok/MultiApp/src/main.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula42-43ok/MultiApp/vite.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula44/NetflixClone/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula44/NetflixClone/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula44/NetflixClone/eslint.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula44/NetflixClone/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula44/NetflixClone/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula44/NetflixClone/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula44/NetflixClone/public/vite.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula44/NetflixClone/src/App.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula44/NetflixClone/src/component/Footer.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula44/NetflixClone/src/component/FormComp.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula44/NetflixClone/src/component/Header.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula44/NetflixClone/src/images/Netflix.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula44/NetflixClone/src/images/back.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula44/NetflixClone/src/main.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula44/NetflixClone/vite.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercícios de React/ReactRouter/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercícios de React/ReactRouter/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercícios de React/ReactRouter/eslint.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercícios de React/ReactRouter/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercícios de React/ReactRouter/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercícios de React/ReactRouter/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercícios de React/ReactRouter/public/vite.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercícios de React/ReactRouter/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercícios de React/ReactRouter/src/App.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercícios de React/ReactRouter/src/component/Navbar.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercícios de React/ReactRouter/src/main.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercícios de React/ReactRouter/src/routes/Contact.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercícios de React/ReactRouter/src/routes/ContactDetails.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercícios de React/ReactRouter/src/routes/ErrorPage.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercícios de React/ReactRouter/src/routes/Home.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercícios de React/ReactRouter/vite.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Módulo05-JAVA/Aula46/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Módulo05-JAVA/Aula46/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Módulo05-JAVA/Aula46/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Módulo05-JAVA/Aula46/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Módulo05-JAVA/Aula46/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Módulo05-JAVA/Aula46/Aula46.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Módulo05-JAVA/Aula46/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Módulo05-JAVA/Aula47/Estruturas_de_Controle-Condicional_e_Repeticao/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Módulo05-JAVA/Aula47/Estruturas_de_Controle-Condicional_e_Repeticao/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Módulo05-JAVA/Aula47/Estruturas_de_Controle-Condicional_e_Repeticao/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Módulo05-JAVA/Aula47/Estruturas_de_Controle-Condicional_e_Repeticao/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Módulo05-JAVA/Aula47/Estruturas_de_Controle-Condicional_e_Repeticao/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Módulo05-JAVA/Aula47/Estruturas_de_Controle-Condicional_e_Repeticao/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Módulo05-JAVA/Aula47/Estruturas_de_Controle-Condicional_e_Repeticao/Estruturas_de_Controle-Condicional_e_Repeticao.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Módulo05-JAVA/Aula47/Estruturas_de_Controle-Condicional_e_Repeticao/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Módulo05-JAVA/Aula48/Arrays_Uni_e_Bidimenssionais/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Módulo05-JAVA/Aula48/Arrays_Uni_e_Bidimenssionais/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Módulo05-JAVA/Aula48/Arrays_Uni_e_Bidimenssionais/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Módulo05-JAVA/Aula48/Arrays_Uni_e_Bidimenssionais/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Módulo05-JAVA/Aula48/Arrays_Uni_e_Bidimenssionais/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Módulo05-JAVA/Aula48/Arrays_Uni_e_Bidimenssionais/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Módulo05-JAVA/Aula48/Arrays_Uni_e_Bidimenssionais/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Módulo05-JAVA/Aula48/Arrays_Uni_e_Bidimenssionais/Arrays_Uni_e_Bidimenssionais.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Módulo05-JAVA/Aula48/Arrays_Uni_e_Bidimenssionais/src/Main.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2
+}]]></component>
+  <component name="ProjectId" id="2lRBxEwi6PLpPEjYGYD1gUrKPY1" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f82f173e-1f38-4f1b-b762-2c77710f8f47" name="Changes" comment="" />
+      <created>1725133254439</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1725133254439</updated>
+    </task>
+    <servers />
+  </component>
+</project>
