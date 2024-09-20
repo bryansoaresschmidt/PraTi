@@ -1,3 +1,11 @@
+/*Exercício 1: Parâmetros de Rotas
+
+Utilizar parâmetros de rotas para exibir detalhes dinâmicos.
+
+Crie um componente UserDetail.jsx que exiba detalhes de um usuário com base em um parâmetro de rota (por exemplo, userId).
+No App.jsx, defina uma rota dinâmica para o componente UserDetail.jsx utilizando um parâmetro de rota.
+No UserDetail.jsx, utilize o hook useParams para acessar o parâmetro de rota e exibir as informações correspondentes.*/
+
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import UserDetail from "./component/UserDetail";

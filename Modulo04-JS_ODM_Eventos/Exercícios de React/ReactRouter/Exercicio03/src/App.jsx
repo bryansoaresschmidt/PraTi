@@ -1,3 +1,11 @@
+/*Exercício 3: Rotas Aninhadas
+
+Configurar rotas aninhadas para criar uma estrutura de navegação hierárquica.
+
+Crie um componente Dashboard.jsx que contenha links de navegação para diferentes seções do painel.
+Crie componentes Overview.jsx, Settings.jsx e Reports.jsx para as diferentes seções do painel.
+No Dashboard.jsx, defina rotas aninhadas para os componentes Overview.jsx, Settings.jsx e Reports.jsx.*/
+
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Overview from "./component/Overview";
 import Dashboard from "./component/Dashboard";
