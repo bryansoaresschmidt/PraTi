@@ -38,7 +38,8 @@ preco decimal(5,2) not null
 
 insert into cardapio(nome_cafe, descricao, preco) values
 ('Café Expresso', 'Café puro moído', 5.00),
-('Cappuccino', 'Café expresso com leite vaporizado com espuma de leite', 6.50);
+('Cappuccino', 'Café expresso com leite vaporizado com espuma de leite', 6.50),
+('Leite puro', 'Leite integral', 3.00);
 
 insert into comanda(data_comanda, mesa, nome_cliente) values
 ('2024-09-08', 5, 'Hagrid'),
@@ -62,11 +63,53 @@ order by data_comanda, comanda.comanda_id, cardapio.nome_cafe;
 select comanda.*, SUM(itenscomanda.preco_total) from comanda
 inner join itenscomanda on itenscomanda.comanda_id = comanda.comanda_id
 group by comanda.comanda_id
-order by data_comanda desc;
+order by data_comanda;
 
 -- 4
 select comanda.*, SUM(itenscomanda.preco_total) from comanda
 inner join itenscomanda on itenscomanda.comanda_id = comanda.comanda_id
 group by comanda.comanda_id
-order by data_comanda desc;
+having
+	count(itenscomanda.comanda_id) > 1
+order by data_comanda;
+
+-- 5 
+select comanda.data_comanda, sum(itenscomanda.preco_total) as faturamento
+from comanda
+inner join itenscomanda on itenscomanda.comanda_id = comanda.comanda_id
+group by comanda.data_comanda;
+
+-- 6 Escreva um scrip pra excluir do cardápio os cafés que nunca foram vendidos
+delete from cardapio
+where cardapio_id not in (select distinct cardapio_id from itenscomanda);
+-- select distinct cardapio_id from itenscomanda;
+
+-- 7 Aumente em 10% o preço de todos os cafés da loja
+update cardapio
+set preco = preco * 1.10;
+select * from cardapio;
+select * from itenscomanda;
+
+-- 8 Faça uma listagem do cardápio apresentando as seguintes colunas extras: quantidade de café vendidos e total vendido por café
+select 
+	cardapio.*, 
+	sum(itenscomanda.qtd_itens) as Total_Itens_Vendidos, 
+	sum(itenscomanda.preco_total) Faturamento 
+from cardapio
+left join itenscomanda on itenscomanda.cardapio_id = cardapio.cardapio_id
+group by cardapio_id;
+
+-- 9 Diminua 5% do valor de todos os cafés que venderam mais que 50 unidades vendidas
+update cardapio
+join (
+select cardapio_id, sum(qtd_itens) as total_vendido 
+from itenscomanda
+group by cardapio_id
+) as j
+on cardapio.cardapio_id = j.cardapio_id
+set preco = preco * 0.95
+where total_vendido > 50;
+
+select * from cardapio;
+
 
