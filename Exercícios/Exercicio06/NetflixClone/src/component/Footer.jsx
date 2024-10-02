@@ -1,11 +1,17 @@
 import styled from "styled-components";
 
 const DivContainer = styled.div`
-  padding: 50px 100px;
   width: 100%;
-  height: 60vh;
   background-color: black;
   margin: 0 auto;
+  @media (max-width: 950px) {
+    padding: 30px 20px;
+    height: 300px;
+  }
+  @media (min-width: 1000px) {
+    padding: 30px 150px;
+    height: 350px;
+    }
 `;
 
 const DivParent = styled.div`
@@ -18,11 +24,17 @@ const DivParent = styled.div`
 const DivChildren = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 1vw;
+  gap: 10px;
 `;
 
 const A = styled.a`
   color: #858585;
+  @media (max-width: 950px) {
+    font-size: 13px;
+  }
+  @media (min-width: 1000px) {
+      font-size: 18px;
+    }
 `;
 
 const Footer = () => {

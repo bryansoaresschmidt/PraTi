@@ -1,0 +1,22 @@
+Dependências:
+
+Lombok Developer Tools
+Java annotation library which helps to reduce boilerplate code.
+
+Spring Web Web
+Build web, including RESTful, applications using Spring MVC. Uses Apache Tomcat as the default embedded container.
+
+Spring Boot DevTools Developer Tools
+Provides fast application restarts, LiveReload, and configurations for enhanced development experience.
+
+OAuth2 Resource Server Security
+Spring Boot integration for Spring Security's OAuth2 resource server features.
+
+Spring Security Security
+Highly customizable authentication and access-control framework for Spring applications.
+
+Spring Data JPA SQL
+Persist data in SQL stores with Java Persistence API using Spring Data and Hibernate.
+
+MySQL Driver SQL
+MySQL JDBC driver.

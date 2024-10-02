@@ -1,7 +1,0 @@
-drop database Aula61;
-
-
-
-
-
-

@@ -1,14 +1,16 @@
-import FormComp from "./component/FormComp"
-import Header from "./component/Header"
-import Footer from './component/Footer'
+import FormComp from "../component/FormComp"
+import HeaderLogin from "../component/HeaderLogin"
+import Footer from '../component/Footer'
+import BackgroundDiv from "../component/BackgroundDiv";
 
 function Login() {
 
   return (
     <>
-      <GlobalStyle />
-      <Header />
-      <FormComp />
+      <HeaderLogin />
+      <BackgroundDiv>
+        <FormComp />
+      </BackgroundDiv>
       <Footer />
     </>
   )
