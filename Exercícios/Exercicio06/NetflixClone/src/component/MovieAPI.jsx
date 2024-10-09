@@ -17,7 +17,7 @@ const Container = styled.div`
         font-size: 30px;
         padding: 20px 150px;
     }
-`;
+    `;
 const Div = styled.div`
     display: flex;
     justify-content: space-between;
@@ -25,13 +25,13 @@ const Div = styled.div`
     width: 100%;
     gap: 30px;
     margin-top: 100px;
-`;
+    `;
 const Form = styled.form`
     display: flex;
     gap: 10px;
     position: relative;
     top: 4px;
-`;
+    `;
 const Input = styled.input`
     background-color: rgba(40, 40, 40);
     border: none;
@@ -41,7 +41,7 @@ const Input = styled.input`
     &::placeholder {
         color: rgba(255, 255, 255, 0.8);
     }
-`;
+    `;
 const H1 = styled.h1`
     color: white;
     font-weight: 900;
@@ -53,7 +53,7 @@ const H1 = styled.h1`
         font-size: 30px;
     }
     position: relative;
-`;
+    `;
 const Button = styled.button`
     padding: 10px 10px 5px;
     background-color: red;
@@ -69,7 +69,7 @@ const Button = styled.button`
     &:hover {
         background-color: #bd0000;
     }
-`;
+    `;
 const StyledSwiper = styled(Swiper)`
     .swiper-button-next,
     .swiper-button-prev {
@@ -100,10 +100,10 @@ const StyledSwiper = styled(Swiper)`
         z-index: 10; /* Coloca a paginação acima dos slides */
     }
     height: 400px;
-`;
+    `;
 const StyledSwiperSlide = styled(SwiperSlide)`
     overflow: hidden;
-`;
+    `;
 
 // Estilos do Modal
 const ModalContainer = styled.div`
@@ -117,24 +117,23 @@ const ModalContainer = styled.div`
     justify-content: center;
     align-items: center;
     z-index: 1000;
-    
     `;
 const ModalContent = styled.div`
     background-color: rgba(20, 20, 20);
     padding: 50px;
     border-radius: 8px;
     width: 80%;
+    min-width: 600px;
     max-width: 800px;
     text-align: center;
     transform: ${({ show }) => (show ? 'scale(1)' : 'scale(0.8)')};
     transition: transform 0.4s ease; /* Transição para a escala */
-
     display: flex;
     justify-content: center;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
     gap: 30px;
-`;
+    `;
 const CloseButton = styled.button`
     background-color: transparent;
     position: absolute;
@@ -146,20 +145,31 @@ const CloseButton = styled.button`
     font-size: 35px;
     top: 15px;
     right: 15px;
-`;
+    `;
 const Img = styled.img`
     width: 300px;
     border-radius: 10px;
-`
+    @media (max-width: 950px) {
+        width: 250px;
+    }
+    `
 const P = styled.p`
     font-size: 20px;
     text-align: justify;
-`
+    @media (max-width: 950px) {
+        font-size: 17px;
+    }
+    `
 const DivModal = styled.div`
-    display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 30px;
+    display: flex;
+    @media (max-width: 950px) {
+        flex-direction: column;
+    }
+    @media (min-width: 1000px) {
+    }
 `;
 const SubDivModal = styled.div`
     display: flex;
@@ -371,13 +381,13 @@ const MovieAPI = () => {
                 <ModalContainer>
                     <ModalContent>
                         <DivModal>
-                        <SubDivModal>
-                            <div>
-                            <h3>{selectedMovie.title}</h3>
-                            <h4>Nota: {selectedMovie.vote_average.toFixed(2)} <FaStar/></h4>
-                            </div>
-                            <P>Resumo: {selectedMovie.overview}</P>
-                        </SubDivModal>
+                            <SubDivModal>
+                                <div>
+                                <h3>{selectedMovie.title}</h3>
+                                <h4>Nota: {selectedMovie.vote_average.toFixed(2)} <FaStar/></h4>
+                                </div>
+                                <P>Resumo: {selectedMovie.overview}</P>
+                            </SubDivModal>
                             <Img src={selectedMovie.poster_path ? imageUrl + selectedMovie.poster_path : defaultImage} alt={selectedMovie.title || 'Imagem padrão'} />
                         </DivModal>
                         {/* Você pode adicionar mais informações sobre o filme aqui */}
