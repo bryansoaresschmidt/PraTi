@@ -1,0 +1,11 @@
+Dado o modelo relacional abaixo que visa resolver uma alocação de alunos e utilizando o aplicativo MySQL Workbench para modelar, construir e executar os comandos SQL, responda as perguntas utilizando comandos SQL que atendam o solicitado:
+
+ALUNO (aluno_id, nome, curso, nivel, idade)
+TURMA (turma_id, nometurma, sala, horario)
+MATRÍCULA (matricula_id, aluno_id, turma_id, nota_1, nota_2, nota_3, nota_final, nr_faltas)
+
+1. Quais os nomes de todos os alunos ?
+2. Quais os números das matrículas dos alunos ?
+3. Quais os números das matrículas dos alunos que não estão matriculados em uma turma ?
+4. Quais os números dos alunos matriculados em uma turma de número '30' ?
+5. Qual o horário da turma do aluno 'PATOLINO' ?

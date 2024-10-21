@@ -1,0 +1,26 @@
+"Mensagens de erro/sucesso"
+
+100 Informativos
+200 Status de sucesso
+300 Algum tipo de redirecionamento
+400 Erro no cliente
+500 Erro no servidor
+
+
+"Verbos HTTP"
+
+Get - solicitar recursos
+
+Post - enviar recursos
+
+Patch - atualiza apenas alguns dados
+
+Put - atualiza tudo
+
+Delete - deleta um recurso
+
+Options - eu vou solicitar informações sobre quais métodos HTTP aquele recurso permite
+
+Trace - retorna o caminho
+
+Connect - estabalecer um túnel entre cliente e servidor

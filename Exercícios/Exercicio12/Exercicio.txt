@@ -1,0 +1,17 @@
+Estudo de Caso - Escola de Informática
+
+Uma escola de informática deseja manter um controle do seu funcionamento. Os alunos são organizados em turmas associadas a um tipo específico de curso. As informações sobre uma turma são a quantidade de alunos, horário da aula, duração da aula, data inicial, data final e tipo de curso. Cada turma é orientada por um único professor para o qual são cadastrados CPF, nome, data de nascimento, titulação e todos os telefones possíveis para sua localização. Um professor pode orientar várias turmas que podem ser de diferentes cursos. Para cada turma existe um aluno monitor que auxilia o professor da turma, sendo que um aluno pode ser monitor no máximo em uma turma. Os dados cadastrados dos alunos são: código de matricula, data de matrícula, nome, endereço, telefone, data de nascimento, altura e peso. Um aluno pode estar matriculado em várias turmas se deseja realizar cursos diferentes e para cada matrícula é mantido um registro das ausências do aluno.
+
+Fazer consultas SQL que respondam as seguintes questões:
+
+1) Listar os dados dos alunos;
+2) Listar os dados dos alunos e as turmas que eles estão matriculados;
+3) Listar os alunos que não possuem faltas;
+4) Listar os professores e a quantidade de turmas que cada um leciona;
+5) Listar nome dos professores, apenas um dos números de telefone do professor, dados (id da turma, data início, data fim e horário) das turmas que o professor leciona, curso da turma e alunos matriculados ordenado por nome do professor, id turma e nome do aluno;
+
+Fazer alterações nas tabelas:
+
+
+1) Alterar o nome de todos os professores para maiúsculo;2) Colocar o nome de todos os alunos que estão na turma com o maior número de alunos em maiúsculo;
+3) Excluir as ausências dos alunos nas turmas que estes são monitores;
