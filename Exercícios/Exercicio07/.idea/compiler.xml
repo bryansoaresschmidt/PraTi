@@ -6,9 +6,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Lista_Simplesmente_Encadeada_01" />
-        <module name="Lista_Simplesmente_Encadeada_03" />
+        <module name="07-Filas" />
+        <module name="06-Filas" />
+        <module name="05-Lista_Duplamente_Encadeada" />
+        <module name="08-Filas" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="01-Lista_Simplesmente_Encadeada" target="17" />
+      <module name="02-Lista_Simplesmente_Encadeada" target="17" />
+      <module name="03-Lista_Simplesmente_Encadeada" target="17" />
+      <module name="04-Lista_Duplamente_Encadeada" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>
