@@ -1,0 +1,117 @@
+1. Controller: Gerencia requisições HTTP e retorna respostas, delegando lógica de negócio aos serviços.
+
+2. DTO (Data Transfer Object): Objeto simples para transferir dados entre processos, evitando a exposição do modelo interno.
+
+3. Model: Representa entidades do domínio, geralmente mapeadas para tabelas no banco de dados.
+
+4. Repository: Interface para interagir com o banco de dados, fornecendo métodos para operações CRUD.
+
+5. Security: Protege a aplicação contra acessos não autorizados, configurando autenticação e autorização.
+
+6. Service: Contém a lógica de negócio, interagindo com repositórios para manipulação de dados.
+
+
+
+
+	1. Controller
+O Controller é responsável por lidar com as requisições HTTP e delegar a lógica de negócio para os serviços apropriados. Ele também é responsável por retornar as respostas, seja na forma de JSON, HTML ou outros formatos.
+
+Exemplo:
+import org.springframework.web.bind.annotation.*;
+
+@RestController
+@RequestMapping("/api/users")
+public class UserController {
+    private final UserService userService;
+
+    public UserController(UserService userService) {
+        this.userService = userService;
+    }
+
+    @GetMapping("/{id}")
+    public UserDto getUser(@PathVariable Long id) {
+        return userService.getUserById(id);
+    }
+}
+
+	2. DTO (Data Transfer Object)
+Os DTOs são objetos simples usados para transferir dados entre processos. Eles geralmente contêm apenas campos e métodos de acesso (getters e setters) e são usados para evitar expor a estrutura interna do modelo.
+
+Exemplo:
+
+public class UserDto {
+    private Long id;
+    private String name;
+    private String email;
+
+    // Getters e Setters
+}
+
+	3. Model
+O Model representa as entidades da sua aplicação, que geralmente são mapeadas para tabelas em um banco de dados. Ele contém as propriedades e a lógica de negócio relacionada à entidade.
+
+Exemplo:
+import javax.persistence.*;
+
+@Entity
+public class User {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    private String name;
+    private String email;
+
+    // Getters, Setters e outros métodos
+}
+
+	4. Repository
+Os Repositories são interfaces que permitem interagir com o banco de dados. Eles geralmente estendem uma interface do Spring Data JPA, como JpaRepository, que fornece métodos prontos para operações CRUD.
+
+Exemplo:
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface UserRepository extends JpaRepository<User, Long> {
+    User findByEmail(String email);
+}
+
+	5. Security
+O componente de Security é responsável por proteger a aplicação contra acessos não autorizados. Isso pode incluir a configuração de autenticação, autorização, controle de acesso e gerenciamento de sessões.
+
+Exemplo:
+import org.springframework.context.annotation.Configuration;
+import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+
+@Configuration
+@EnableWebSecurity
+public class SecurityConfig extends WebSecurityConfigurerAdapter {
+    @Override
+    protected void configure(HttpSecurity http) throws Exception {
+        http.authorizeRequests()
+            .antMatchers("/api/public/**").permitAll()
+            .anyRequest().authenticated()
+            .and().httpBasic();
+    }
+}
+	
+	6. Service
+O Service contém a lógica de negócio da aplicação. Ele se comunica com o repositório para realizar operações de CRUD e manipular dados. Isso ajuda a manter o Controller limpo e focado apenas na manipulação de requisições e respostas.
+
+Exemplo:
+import org.springframework.stereotype.Service;
+
+@Service
+public class UserService {
+    private final UserRepository userRepository;
+
+    public UserService(UserRepository userRepository) {
+        this.userRepository = userRepository;
+    }
+
+    public UserDto getUserById(Long id) {
+        User user = userRepository.findById(id).orElseThrow(() -> new RuntimeException("User not found"));
+        return new UserDto(user.getId(), user.getName(), user.getEmail());
+    }
+}
+
