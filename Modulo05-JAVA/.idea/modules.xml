@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Aula46-Introducao_a_JAVA/Aula46-Introducao_a_JAVA.iml" filepath="$PROJECT_DIR$/Aula46-Introducao_a_JAVA/Aula46-Introducao_a_JAVA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Aula47-Estruturas_de_Controle-Condicional_e_Repeticao/Aula47-Estruturas_de_Controle-Condicional_e_Repeticao.iml" filepath="$PROJECT_DIR$/Aula47-Estruturas_de_Controle-Condicional_e_Repeticao/Aula47-Estruturas_de_Controle-Condicional_e_Repeticao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Aula48-Arrays_Uni_e_Bidimenssionais/Aula48-Arrays_Uni_e_Bidimenssionais.iml" filepath="$PROJECT_DIR$/Aula48-Arrays_Uni_e_Bidimenssionais/Aula48-Arrays_Uni_e_Bidimenssionais.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Aula49-Metodos_e_Arquitetura/Aula49-Metodos_e_Arquitetura.iml" filepath="$PROJECT_DIR$/Aula49-Metodos_e_Arquitetura/Aula49-Metodos_e_Arquitetura.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Aula50-52-DataStructure_Listas_Filas_Pilhas_Arvores_/Aula50-52-DataStructure_Listas_Filas_Pilhas_Arvores_.iml" filepath="$PROJECT_DIR$/Aula50-52-DataStructure_Listas_Filas_Pilhas_Arvores_/Aula50-52-DataStructure_Listas_Filas_Pilhas_Arvores_.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Aula50-Estrutura_de_Dados-Listas/Aula50-Estrutura_de_Dados-Listas.iml" filepath="$PROJECT_DIR$/Aula50-Estrutura_de_Dados-Listas/Aula50-Estrutura_de_Dados-Listas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Aula51-Estrutura_de_Dados-Filas/Aula51-Estrutura_de_Dados-Filas.iml" filepath="$PROJECT_DIR$/Aula51-Estrutura_de_Dados-Filas/Aula51-Estrutura_de_Dados-Filas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Aula52-Estrutura_de_Dados-Pilhas/Aula52-Estrutura_de_Dados-Pilhas.iml" filepath="$PROJECT_DIR$/Aula52-Estrutura_de_Dados-Pilhas/Aula52-Estrutura_de_Dados-Pilhas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Aula53-Estrutura_de_Dados-Arvores/Aula53-Estrutura_de_Dados-Arvores.iml" filepath="$PROJECT_DIR$/Aula53-Estrutura_de_Dados-Arvores/Aula53-Estrutura_de_Dados-Arvores.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Aula54-Abstracao/Aula54-Abstracao.iml" filepath="$PROJECT_DIR$/Aula54-Abstracao/Aula54-Abstracao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Aula55-Heranca/Aula55-Eranca.iml" filepath="$PROJECT_DIR$/Aula55-Heranca/Aula55-Eranca.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Aula55-Heranca/Aula55-Heranca.iml" filepath="$PROJECT_DIR$/Aula55-Heranca/Aula55-Heranca.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Aula56-Encapsulamento/Aula56-Encapsulamento.iml" filepath="$PROJECT_DIR$/Aula56-Encapsulamento/Aula56-Encapsulamento.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Aula56-Encapsulamento/Aula56-Encapsulamentu.iml" filepath="$PROJECT_DIR$/Aula56-Encapsulamento/Aula56-Encapsulamentu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Aula57-Threads_e_Polimorfismo/Aula57-Threads_e_Polimorfismo.iml" filepath="$PROJECT_DIR$/Aula57-Threads_e_Polimorfismo/Aula57-Threads_e_Polimorfismo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Módulo05-JAVA.iml" filepath="$PROJECT_DIR$/.idea/Módulo05-JAVA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Aula49-Metodos_e_Arquitetura/moduleTest/moduleTest.iml" filepath="$PROJECT_DIR$/Aula49-Metodos_e_Arquitetura/moduleTest/moduleTest.iml" />
+    </modules>
+  </component>
+</project>

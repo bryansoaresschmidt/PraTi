@@ -1,0 +1,41 @@
+A segurança do JWT não vem da impossibilidade de alguém ler o conteúdo do token, mas da impossibilidade de alterá-lo sem ser detectado. Embora o payload do JWT possa ser decodificado, a assinatura garante que o token não foi modificado. Vou explicar como isso funciona e porque o JWT é considerado seguro em muitos casos.
+
+Como o JWT garante segurança?
+Assinatura digital:
+
+O JWT é assinado usando um algoritmo (como HMAC SHA-256) e uma chave secreta que é conhecida apenas pelo servidor.
+A assinatura é gerada com base no conteúdo do token (header e payload), além dessa chave secreta.
+Quando o servidor recebe o token em uma requisição, ele recalcula a assinatura com base no conteúdo e na chave secreta que só ele conhece. Se a assinatura for válida, o servidor sabe que o token não foi alterado.
+Se alguém tentar alterar o conteúdo do token (por exemplo, mudar o "role" de "user" para "admin"), a assinatura não será mais válida, e o servidor rejeitará o token.
+
+Integridade, não confidencialidade:
+
+O JWT é projetado para garantir a integridade (não modificação), não a confidencialidade.
+A ideia é que, embora qualquer um possa ler o token (já que ele é apenas codificado em base64), ninguém pode modificá-lo sem ser detectado, porque eles não têm a chave secreta para gerar uma assinatura válida.
+Isso significa que as informações no payload (como o nome do usuário, permissões, etc.) podem ser visualizadas, mas não podem ser manipuladas.
+Tokens de curta duração e controle de revogação:
+
+Normalmente, os tokens JWT têm um tempo de expiração curto (definido no campo exp), o que limita a janela de uso, mesmo que alguém obtenha acesso ao token.
+Além disso, é possível implementar mecanismos de revogação, onde o servidor mantém uma lista de tokens revogados ou valida algum aspecto adicional (como a sessão ou o estado do usuário) antes de aceitar o token.
+Por que ele ainda é considerado seguro?
+Imutabilidade:
+
+A segurança está na impossibilidade de modificar o token sem ser detectado. Mesmo que alguém possa decodificar o token e ver o payload, ele não pode alterar esses dados sem invalidar a assinatura.
+Como a assinatura é gerada a partir de uma chave secreta (conhecida apenas pelo servidor), apenas o servidor pode gerar tokens válidos.
+Ambientes confiáveis:
+
+Os tokens JWT são projetados para serem usados em contextos onde as informações transmitidas não são altamente sensíveis ou confidenciais. Por exemplo, é comum armazenar informações como o nome de usuário, permissões (roles) ou identificadores de sessão, que não são críticas se lidas por terceiros, mas sim importantes para o funcionamento da aplicação.
+Se houver necessidade de transmitir informações confidenciais, recomenda-se usar comunicação segura via HTTPS e/ou criptografar o payload do JWT com JWE (JSON Web Encryption).
+O que faz o JWT não ser seguro?
+Se um JWT for usado de forma inadequada, ele pode se tornar inseguro. Alguns exemplos de más práticas incluem:
+
+Armazenar informações sensíveis no payload do JWT (como senhas, números de cartões de crédito, ou dados pessoais).
+Não usar HTTPS: Se o JWT for transmitido sem criptografia (via HTTP em vez de HTTPS), ele pode ser interceptado por um atacante, que poderia usá-lo para fazer requisições em nome do usuário.
+Tokens sem expiração: Se os tokens JWT não tiverem um tempo de expiração curto, um atacante que obtenha o token poderia usá-lo indefinidamente.
+Resumo:
+A segurança do JWT vem da assinatura que garante que o token não foi modificado, e não da ocultação do conteúdo.
+O JWT não é criptografado por padrão, portanto, qualquer um que tenha acesso ao token pode lê-lo, mas não pode alterá-lo.
+Para proteger o JWT contra intercepção, deve-se sempre usar HTTPS.
+Não armazene informações sensíveis no payload do JWT, já que ele é apenas codificado, não criptografado.
+O uso de tokens com tempo de expiração curto e mecanismos de revogação ajuda a limitar os riscos se o token for comprometido.
+Em essência, o JWT é seguro quando usado corretamente, com foco na assinatura para garantir integridade e em medidas adicionais, como HTTPS, para proteger a transmissão do token.
