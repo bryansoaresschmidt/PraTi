@@ -1,4 +1,5 @@
-// Service cuida da lógica e manipulação do banco de dados
+// UserService: Interage diretamente com o banco de dados através do UserRepository para realizar operações relacionadas aos usuários.
+// Também converte a entidade User em um UserDTO, que é mais adequado para a comunicação com o cliente.
 
 package com.example.api_user.service;
 
@@ -17,7 +18,6 @@ import java.util.stream.Collectors; // Coletor do pacote Stream usado para trans
 
 @Service // @Service: Indica que esta classe é um **serviço** Spring, que contém a lógica de negócios. Serviços são componentes do Spring usados para encapsular a lógica central da aplicação e podem ser reutilizados e injetados em outras partes. A anotação `@Service` faz com que esta classe seja registrada automaticamente como um bean gerenciado pelo Spring.
 public class UserService {
-
     @Autowired // @Autowired: Injeta automaticamente a dependência `UserRepository`, que permite realizar operações de banco de dados relacionadas à entidade `User`. O Spring gerencia a instância de `UserRepository` e a injeta automaticamente nesta classe.
     private UserRepository userRepository;
 

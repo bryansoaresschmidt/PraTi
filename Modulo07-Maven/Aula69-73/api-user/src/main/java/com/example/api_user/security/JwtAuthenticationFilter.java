@@ -1,4 +1,5 @@
-//  JwtAuthenticationFilter: filtro personalizado que intercepta cada requisição HTTP para verificar se há um token JWT válido no cabeçalho de autorização e, se houver, autentica o usuário no contexto de segurança do Spring Security.
+//  JwtAuthenticationFilter: filtro personalizado que intercepta cada requisição HTTP para verificar se há um token JWT válido no cabeçalho de autorização
+//  se houver um Token válido, autentica o usuário no contexto de segurança do Spring Security.
 
 package com.example.api_user.security;
 
@@ -35,8 +36,11 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
     }
 
     @Override // Sobrescreve o metodo doFilterInternal para aplicar a lógica do filtro em cada requisição HTTP. Será chamado automaticamente para cada requisição que chega ao servidor.
-    protected void doFilterInternal(HttpServletRequest request,
-                                    HttpServletResponse response, FilterChain filterChain)
+    protected void doFilterInternal(
+            HttpServletRequest request,
+            HttpServletResponse response,
+            FilterChain filterChain
+    )
             throws ServletException, IOException {
         String authHeader = request.getHeader("Authorization");         // Extrai o valor do cabeçalho/header "Authorization" da requisição HTTP.
 
@@ -51,11 +55,9 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
 
         UserDetails userDetails = null; // Inicializa o objeto UserDetails como null.
 
-        if (username != null && SecurityContextHolder.getContext().getAuthentication() != null) { // Se o nome de usuário for válido e não houver autenticação já ativa no contexto de segurança...
+        if (username != null && SecurityContextHolder.getContext().getAuthentication() == null) { // Se o nome de usuário for válido e não houver autenticação já ativa no contexto de segurança...
             userDetails = userDetailsService.loadUserByUsername(username);     // Carrega os detalhes do usuário a partir do nome de usuário extraído do token.
         }
-
-        // Troquei == por != no .getAuthentication()
 
         UsernamePasswordAuthenticationToken authenticationToken = null;
         if (jwtTokenProvider.isTokenValid(jwt, userDetails)) { // Verifica se o token é válido e se o usuário carregado é o correto. Se for válido, criamos um UsernamePasswordAuthenticationToken.

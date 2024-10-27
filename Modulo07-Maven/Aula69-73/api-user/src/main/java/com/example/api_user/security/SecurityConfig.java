@@ -1,3 +1,8 @@
+// SecurityConfig:
+// 1- Configura a segurança da aplicação, definindo quais rotas são protegidas e quais são públicas
+// 2- Define o uso do filtro de autenticação JWT antes do filtro padrão de autenticação por nome de usuário/senha.
+// 3- Configura a conversão de tokens JWT em autenticações do Spring Security. ??? Não entendi essa
+
 package com.example.api_user.security;
 
 // Importações necessárias para configurar a segurança e autenticação

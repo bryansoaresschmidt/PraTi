@@ -1,4 +1,4 @@
-// Classe com todas as informações de fato do nosso usuário
+// Cada instância desta classe corresponde a um registro na tabela "users" no banco de dados.
 
 package com.example.api_user.model;
 
