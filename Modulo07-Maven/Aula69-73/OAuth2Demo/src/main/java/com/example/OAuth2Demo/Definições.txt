@@ -1,0 +1,12 @@
+Proprietário:
+Usuário que vai autorizar o app a acessar aa conta dele
+
+Client:
+Um app que vai solicitar as contas do usuário, no caso, a tela de login
+
+Servidor de autorização:
+GitHub, Google, Facebook, etc
+
+Servidor de recursos:
+Permitir que os dados sejam acessados a partir da autorização feita pelo OAuth2 (pelo servidor Google, Facebook, enfim)
+
