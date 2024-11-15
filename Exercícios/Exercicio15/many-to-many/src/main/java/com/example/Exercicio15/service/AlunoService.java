@@ -58,5 +58,4 @@ public class AlunoService {
         alunoRepository.save(aluno.get()); // Salvar o "novo" usuário
         return true;
     }
-
 }

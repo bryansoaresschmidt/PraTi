@@ -47,20 +47,14 @@ public class AlunoController {
 
     @PostMapping("/{idAluno}/cursos/{idCurso}")
     public ResponseEntity<String> enrollStudent(@PathVariable Long idAluno, @PathVariable Long idCurso){
-        try {
-            Set<Long> newIdCurso = new HashSet<>();
-            newIdCurso.add(idCurso);
+        Set<Long> newIdCurso = new HashSet<>();
+        newIdCurso.add(idCurso);
 
-            boolean enrolled = alunoService.enrollStudent(idAluno, newIdCurso);
+        boolean enrolled = alunoService.enrollStudent(idAluno, newIdCurso);
 
-            if(enrolled) {
-                return ResponseEntity.status(HttpStatus.OK).build();
-            }
-            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Erro ao matricular um aluno");
-        } catch (DuplicateKeyException e) {
-            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Relação já existente");
-        } catch (Exception e) {
-            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Erro ao processar a requisição.");
+        if(enrolled) {
+            return ResponseEntity.status(HttpStatus.OK).build();
         }
+        return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Erro ao matricular um aluno");
     }
 }
