@@ -8,9 +8,9 @@ import jakarta.persistence.EntityNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.HashSet;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
-import java.util.Set;
 
 @Service
 public class AlunoService {
@@ -20,42 +20,70 @@ public class AlunoService {
     private CursoRepository cursoRepository;
 
     //   GET - Todos alunos
-    public Set<Aluno> listAllStudents() {
-        return new HashSet<>(alunoRepository.findAll());
+    public List<Aluno> listAllStudents() {
+        return alunoRepository.findAll();
     }
     //   GET - Todos cursos de um aluno específico
-    public Set<Curso> listAllCoursesFromStudent(Long id) {
-        Optional<Aluno> aluno = alunoRepository.findById(id);
-        if (aluno.isEmpty()) {
-            throw new EntityNotFoundException("Alunos não encontrado.");
+    public List<Curso> listAllCoursesFromStudent(Long id) {
+        Optional<Aluno> alunoOpt = alunoRepository.findById(id);
+        if (alunoOpt.isEmpty()) {
+            throw new EntityNotFoundException("Curso não encontrado.");
         }
 
-        return aluno.get().getCursos();
+        return alunoOpt.get().getCursos();
     }
 
     //   POST - Criar
     public Aluno createStudent(Aluno aluno) {
+        if (alunoRepository.existsByNome(aluno.getNome())) {
+            throw new IllegalArgumentException("Já existe esse aluno no banco de dados");
+        }
         return alunoRepository.save(aluno);
     }
 
-    //   POST - Matricular vários cursos a um aluno
-    public boolean enrollStudent(Long idAluno, Set<Long> newIdCurso) {
-        Optional<Aluno> aluno = alunoRepository.findById(idAluno); // Achar aluno
-        if (aluno.isEmpty()) {
+    //   POST - Matricular cursos a um aluno
+    public boolean enrollStudent(Long idAluno, Long idCurso) {
+        Optional<Aluno> alunoOpt = alunoRepository.findById(idAluno); // Achar aluno
+        Optional<Curso> cursoOpt = cursoRepository.findById(idCurso); // Achar curso
+        if (alunoOpt.isEmpty() || cursoOpt.isEmpty()) {
             throw new EntityNotFoundException("Aluno não encontrado");
         }
 
-        Set<Curso> cursos = new HashSet<>();
-        for (Long idCurso : newIdCurso) {
-            Optional<Curso> curso = cursoRepository.findById(idCurso); // Achar curso
-            if (curso.isEmpty()) {
-                throw new EntityNotFoundException("Curso de id " + idCurso + " não encontrado");
-            }
-            cursos.add(curso.get());
+        Aluno aluno = alunoOpt.get();
+        Curso curso = cursoOpt.get();
+
+        if (aluno.getCursos().contains(curso)) {
+            return false;
         }
 
-        aluno.get().getCursos().addAll(cursos); // Add cursos
-        alunoRepository.save(aluno.get()); // Salvar o "novo" usuário
+        aluno.getCursos().add(curso);
+        alunoRepository.save(aluno);
         return true;
+    }
+
+    // DELETE - Excluir aluno de um curso
+    public boolean deleteStudentFromCourse(Long idAluno, Long idCurso) {
+        Optional<Aluno> alunoOpt = alunoRepository.findById(idAluno); // Buscar aluno
+        Optional<Curso> cursoOpt = cursoRepository.findById(idCurso); // Buscar curso
+        if (alunoOpt.isEmpty() || cursoOpt.isEmpty()) {
+            throw new EntityNotFoundException("Aluno ou curso não encontrado");
+        }
+
+        Aluno aluno = alunoOpt.get();
+        Curso curso = cursoOpt.get();
+
+        if (!aluno.getCursos().contains(curso)) {
+            return false;
+        }
+
+        aluno.getCursos().remove(curso);
+        alunoRepository.save(aluno);
+        return true;
+    }
+
+
+    // BÔNUS:
+    public Optional<Aluno> findByEmail(String email) {
+        return alunoRepository.findByEmail(email);
     }
 }

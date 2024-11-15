@@ -10,8 +10,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 @RestController
 @RequestMapping("/aluno")
@@ -22,16 +21,16 @@ public class AlunoController {
     private CursoService cursoService;
 
     @GetMapping
-    public ResponseEntity<Set<Aluno>> listAllStudents() {
-        Set<Aluno> alunos = alunoService.listAllStudents();
-        return ResponseEntity.ok(alunos);
+    public ResponseEntity<List<Aluno>> listAllStudents() {
+        List<Aluno> alunosList = alunoService.listAllStudents();
+        return ResponseEntity.ok(alunosList);
     }
 
     @GetMapping("/{id}/cursos")
-    public ResponseEntity<Set<Curso>> listAllCoursesFromStudent(@PathVariable Long id) {
-        Set<Curso> cursos = alunoService.listAllCoursesFromStudent(id);
-        if (cursos != null && !cursos.isEmpty()) {
-            return ResponseEntity.ok(cursos);
+    public ResponseEntity<List<Curso>> listAllCoursesFromStudent(@PathVariable Long id) {
+        List<Curso> cursosList = alunoService.listAllCoursesFromStudent(id);
+        if (cursosList != null && !cursosList.isEmpty()) {
+            return ResponseEntity.ok(cursosList);
         }
         return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
     }
@@ -47,14 +46,30 @@ public class AlunoController {
 
     @PostMapping("/{idAluno}/cursos/{idCurso}")
     public ResponseEntity<String> enrollStudent(@PathVariable Long idAluno, @PathVariable Long idCurso){
-        Set<Long> newIdCurso = new HashSet<>();
-        newIdCurso.add(idCurso);
-
-        boolean enrolled = alunoService.enrollStudent(idAluno, newIdCurso);
+        boolean enrolled = alunoService.enrollStudent(idAluno, idCurso);
 
         if(enrolled) {
             return ResponseEntity.status(HttpStatus.OK).build();
         }
         return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Erro ao matricular um aluno");
+    }
+
+    @DeleteMapping("/{idAluno}/cursos/{idCurso}")
+    public ResponseEntity<String> deleteStudentFromCourse(@PathVariable Long idAluno, @PathVariable Long idCurso){
+        boolean removed = alunoService.deleteStudentFromCourse(idAluno, idCurso);
+
+        if(removed) {
+            return ResponseEntity.status(HttpStatus.OK).build();
+        }
+        return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Erro ao matricular um aluno");
+    }
+
+    @GetMapping("/search")
+    public ResponseEntity<?> findByEmail(@RequestParam String email) {
+        Optional<Aluno> alunoOpt = alunoService.findByEmail(email);
+        if (alunoOpt.isPresent()) {
+            return ResponseEntity.ok(alunoOpt.get());
+        }
+        return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Esse email não consta na base de dados");
     }
 }

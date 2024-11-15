@@ -1,20 +1,20 @@
 package com.example.Exercicio15.model;
 
-import com.fasterxml.jackson.annotation.JsonManagedReference;
+import com.fasterxml.jackson.annotation.JsonIdentityInfo;
+import com.fasterxml.jackson.annotation.JsonIdentityReference;
+import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
-import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import jakarta.validation.constraints.Email;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.List;
 
-@Data
 @Entity
-@NoArgsConstructor(force = true)
+@NoArgsConstructor
 @AllArgsConstructor
+@JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
 @Table(name = "aluno")
 public class Aluno {
     @Id
@@ -34,6 +34,38 @@ public class Aluno {
             joinColumns = @JoinColumn(name = "aluno_id"),
             inverseJoinColumns = @JoinColumn(name = "curso_id")
     )
-    @JsonManagedReference
-    private Set<Curso> cursos = new HashSet<>();
+    @JsonIdentityReference(alwaysAsId = true)
+    private List<Curso> cursos;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public @Email String getEmail() {
+        return email;
+    }
+
+    public void setEmail(@Email String email) {
+        this.email = email;
+    }
+
+    public List<Curso> getCursos() {
+        return cursos;
+    }
+
+    public void setCursos(List<Curso> cursos) {
+        this.cursos = cursos;
+    }
 }
