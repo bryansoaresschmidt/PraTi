@@ -1,0 +1,4 @@
+npm init -y
+npm i express
+npm i swagger-jsdoc swagger-ui-express
+node app.js

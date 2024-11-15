@@ -1,8 +1,6 @@
-// Define o pacote onde a classe reside
 package com.example.api_user.security;
 
-// Importa o serviço personalizado que carrega os detalhes do usuário.
-// Esse serviço é utilizado para buscar as informações do usuário no banco de dados com base no nome de usuário.
+// Importa o serviço personalizado que carrega os detalhes do usuário. Esse serviço é utilizado para buscar as informações do usuário no banco de dados com base no nome de usuário.
 import com.example.api_user.service.CustomUserDetailsService;
 
 // Importa classes para manipulação de requisições e respostas HTTP em um ambiente de servlet.
@@ -11,12 +9,10 @@ import jakarta.servlet.ServletException; // Exceção que pode ser lançada dura
 import jakarta.servlet.http.HttpServletRequest; // Representa a requisição HTTP.
 import jakarta.servlet.http.HttpServletResponse; // Representa a resposta HTTP.
 
-// Importa o pacote de configuração do Spring.
-// A anotação @Configuration serve para registrar a classe no contexto do Spring.
+// Importa o pacote de configuração do Spring. A anotação @Configuration serve para registrar a classe no contexto do Spring.
 import org.springframework.context.annotation.Configuration;
 
-// Importa classes do Spring Security relacionadas à autenticação.
-// UsernamePasswordAuthenticationToken é o token que o Spring Security usa para autenticar o usuário baseado em nome de usuário e senha.
+// Importa classes do Spring Security relacionadas à autenticação. UsernamePasswordAuthenticationToken é o token que o Spring Security usa para autenticar o usuário baseado em nome de usuário e senha.
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 
 // Importa o SecurityContextHolder, que armazena as informações de segurança (autenticação) durante a requisição atual.
@@ -34,8 +30,7 @@ import org.springframework.web.filter.OncePerRequestFilter; // Garante que o fil
 // Importa a classe IOException, lançada caso ocorra um erro de I/O durante o processamento da requisição.
 import java.io.IOException;
 
-// Anotação @Configuration:
-// - Indica que esta classe faz parte da configuração do Spring. Isso registra a classe como um bean gerenciado pelo Spring.
+// @Configuration: Indica que esta classe faz parte da configuração do Spring. Isso registra a classe como um bean gerenciado pelo Spring.
 @Configuration
 public class JwtAuthenticationFilter extends OncePerRequestFilter {
     // Dependências injetadas por meio do construtor para manipulação de tokens e carregamento de usuários.
@@ -50,52 +45,36 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
         this.userDetailsService = userDetailsService;
     }
 
-    // Sobrescreve o método doFilterInternal para aplicar a lógica do filtro em cada requisição HTTP.
-    // - Esse método será chamado automaticamente para cada requisição que chega ao servidor.
+    // Sobrescreve o método doFilterInternal para aplicar a lógica do filtro em cada requisição HTTP. Esse método será chamado automaticamente para cada requisição que chega ao servidor.
     @Override
-    protected void doFilterInternal(HttpServletRequest request,
-                                    HttpServletResponse response, FilterChain filterChain)
-            throws ServletException, IOException {
-        // Extrai o valor do cabeçalho "Authorization" da requisição HTTP.
-        String authHeader = request.getHeader("Authorization");
+    protected void doFilterInternal(
+            HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
+        String authHeader = request.getHeader("Authorization"); // Extrai o valor do cabeçalho "Authorization" da requisição HTTP.
 
-        // Se o cabeçalho "Authorization" estiver ausente ou não começar com "Bearer ", o filtro não tenta autenticar.
-        // A requisição continua sem autenticação, pois não há um token válido.
-        if (authHeader == null || !authHeader.startsWith("Bearer ")) {
+        if (authHeader == null || !authHeader.startsWith("Bearer ")) { // Se o cabeçalho "Authorization" estiver ausente ou não começar com "Bearer ", o filtro não tenta autenticar. A requisição continua sem autenticação, pois não há um token válido.
             filterChain.doFilter(request, response);
             return;
         }
 
-        // Remove a parte "Bearer " do token e mantém apenas o JWT em si.
-        String jwt = authHeader.substring(7);
+        String jwt = authHeader.substring(7); // Remove a parte "Bearer " do token e mantém apenas o JWT em si.
 
-        // Extrai o nome de usuário (username) do token JWT usando o jwtTokenProvider.
-        String username = jwtTokenProvider.extractUsername(jwt);
+        String username = jwtTokenProvider.extractUsername(jwt); // Extrai o nome de usuário (username) do token JWT usando o jwtTokenProvider.
 
-        // Inicializa o objeto UserDetails como null.
-        UserDetails userDetails = null;
+        UserDetails userDetails = null; // Inicializa o objeto UserDetails como null.
 
-        // Se o nome de usuário for válido e não houver autenticação já ativa no contexto de segurança...
-        if (username != null && SecurityContextHolder.getContext().getAuthentication() == null) {
-            // Carrega os detalhes do usuário a partir do nome de usuário extraído do token.
-            userDetails = userDetailsService.loadUserByUsername(username);
+        if (username != null && SecurityContextHolder.getContext().getAuthentication() == null) { // Se o nome de usuário for válido e não houver autenticação já ativa no contexto de segurança...=
+            userDetails = userDetailsService.loadUserByUsername(username); // Carrega os detalhes do usuário a partir do nome de usuário extraído do token.
         }
 
-        // Verifica se o token é válido e se o usuário carregado é o correto.
-        // Se for válido, criamos um UsernamePasswordAuthenticationToken.
-        UsernamePasswordAuthenticationToken authenticationToken = null;
+        UsernamePasswordAuthenticationToken authenticationToken = null; // Verifica se o token é válido e se o usuário carregado é o correto. Se for válido, criamos um UsernamePasswordAuthenticationToken.
         if (jwtTokenProvider.isTokenValid(jwt, userDetails)) {
             authenticationToken = new UsernamePasswordAuthenticationToken(userDetails, null, userDetails.getAuthorities());
 
-            // Configura os detalhes da autenticação (IP, informações da requisição, etc.).
-            authenticationToken.setDetails(new WebAuthenticationDetailsSource().buildDetails(request));
+            authenticationToken.setDetails(new WebAuthenticationDetailsSource().buildDetails(request)); // Configura os detalhes da autenticação (IP, informações da requisição, etc.).
         }
 
-        // Define o objeto de autenticação no SecurityContext do Spring Security.
-        // Isso autentica o usuário para o contexto da requisição atual.
-        SecurityContextHolder.getContext().setAuthentication(authenticationToken);
+        SecurityContextHolder.getContext().setAuthentication(authenticationToken); // Define o objeto de autenticação no SecurityContext do Spring Security. Isso autentica o usuário para o contexto da requisição atual.
 
-        // Continua o processamento da requisição, passando para o próximo filtro na cadeia de filtros.
-        filterChain.doFilter(request, response);
+        filterChain.doFilter(request, response); // Continua o processamento da requisição, passando para o próximo filtro na cadeia de filtros.
     }
 }

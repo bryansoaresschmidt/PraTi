@@ -19,7 +19,9 @@
 	<description>Demo project for Spring Boot</description> <!-- Descrição do projeto -->
 
 	<properties>
-		<java.version>17</java.version> <!-- Define a versão do Java usada (Java 17) -->
+		<java.version>17</java.version>
+		<maven.compiler.source>17</maven.compiler.source>
+		<maven.compiler.target>17</maven.compiler.target> <!-- Define a versão do Java usada (Java 17) -->
 	</properties>
 
 	<dependencies>
@@ -33,35 +35,35 @@
             - Inclui suporte para Hibernate (o provedor JPA mais usado) e funcionalidades como transações e operações CRUD automáticas. -->
 		</dependency>
 
-		<!-- Spring Boot OAuth2 Resource Server -->
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-oauth2-resource-server</artifactId>
-			<!-- Esta dependência é usada para configurar o projeto como um **servidor de recursos** OAuth2.
-            - Um servidor de recursos OAuth2 é a parte do sistema que contém dados protegidos.
-            - Ele processa tokens de acesso para validar se o usuário tem permissão para acessar recursos específicos.
-            - Isso é útil para autenticação e autorização de APIs protegidas. -->
-		</dependency>
+<!--		&lt;!&ndash; Spring Boot OAuth2 Resource Server &ndash;&gt;-->
+<!--		<dependency>-->
+<!--			<groupId>org.springframework.boot</groupId>-->
+<!--			<artifactId>spring-boot-starter-oauth2-resource-server</artifactId>-->
+<!--			&lt;!&ndash; Esta dependência é usada para configurar o projeto como um **servidor de recursos** OAuth2.-->
+<!--            - Um servidor de recursos OAuth2 é a parte do sistema que contém dados protegidos.-->
+<!--            - Ele processa tokens de acesso para validar se o usuário tem permissão para acessar recursos específicos.-->
+<!--            - Isso é útil para autenticação e autorização de APIs protegidas. &ndash;&gt;-->
+<!--		</dependency>-->
 
-		<!-- Spring Boot OAuth2 Authorization Server -->
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-oauth2-authorization-server</artifactId>
-			<!-- Esta dependência transforma o projeto em um **servidor de autorização** OAuth2.
-            - O servidor de autorização emite tokens de acesso e tokens de atualização (refresh tokens) que os clientes utilizam para acessar os recursos protegidos.
-            - Implementa o fluxo completo de autorização do OAuth2, como o fluxo de autorização, fluxo de credenciais do cliente, entre outros.
-            - Permite a integração com servidores de identidade, como Google ou GitHub, para autenticação de usuários. -->
-		</dependency>
+<!--		&lt;!&ndash; Spring Boot OAuth2 Authorization Server &ndash;&gt;-->
+<!--		<dependency>-->
+<!--			<groupId>org.springframework.boot</groupId>-->
+<!--			<artifactId>spring-boot-starter-oauth2-authorization-server</artifactId>-->
+<!--			&lt;!&ndash; Esta dependência transforma o projeto em um **servidor de autorização** OAuth2.-->
+<!--            - O servidor de autorização emite tokens de acesso e tokens de atualização (refresh tokens) que os clientes utilizam para acessar os recursos protegidos.-->
+<!--            - Implementa o fluxo completo de autorização do OAuth2, como o fluxo de autorização, fluxo de credenciais do cliente, entre outros.-->
+<!--            - Permite a integração com servidores de identidade, como Google ou GitHub, para autenticação de usuários. &ndash;&gt;-->
+<!--		</dependency>-->
 
-		<!-- Spring Boot OAuth2 Client -->
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-oauth2-client</artifactId>
-			<!-- Esta dependência permite configurar o projeto como um **cliente OAuth2**.
-            - Um cliente OAuth2 é uma aplicação que solicita tokens de acesso de um servidor de autorização para acessar recursos protegidos.
-            - Permite que a aplicação se conecte a provedores de identidade (como Google, GitHub) para autenticação e obtenção de tokens de acesso.
-            - É usado principalmente para integração de login social e obtenção de permissões do usuário. -->
-		</dependency>
+<!--		&lt;!&ndash; Spring Boot OAuth2 Client &ndash;&gt;-->
+<!--		<dependency>-->
+<!--			<groupId>org.springframework.boot</groupId>-->
+<!--			<artifactId>spring-boot-starter-oauth2-client</artifactId>-->
+<!--			&lt;!&ndash; Esta dependência permite configurar o projeto como um **cliente OAuth2**.-->
+<!--            - Um cliente OAuth2 é uma aplicação que solicita tokens de acesso de um servidor de autorização para acessar recursos protegidos.-->
+<!--            - Permite que a aplicação se conecte a provedores de identidade (como Google, GitHub) para autenticação e obtenção de tokens de acesso.-->
+<!--            - É usado principalmente para integração de login social e obtenção de permissões do usuário. &ndash;&gt;-->
+<!--		</dependency>-->
 
 		<!-- JJWT (Java JWT - JSON Web Token) API -->
 		<dependency>
@@ -177,6 +179,17 @@
 					</excludes>
 				</configuration>
 			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>3.3.1</version>
+				<configuration>
+					<encoding>UTF-8</encoding> <!-- Definir codificação para UTF-8 -->
+					<escapeString>${file.separator}</escapeString> <!-- Evitar problemas com barra invertida no Windows -->
+				</configuration>
+			</plugin>
+
 		</plugins>
 	</build>
 

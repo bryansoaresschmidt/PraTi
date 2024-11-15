@@ -5,10 +5,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration;
 
 @SpringBootApplication
+// Use isso do lado para funcionar sem autenticação
+		// (exclude = { SecurityAutoConfiguration.class })
 public class ApiUserApplication {
-
 	public static void main(String[] args) {
 		SpringApplication.run(ApiUserApplication.class, args);
 	}
-
 }
